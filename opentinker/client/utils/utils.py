@@ -98,6 +98,8 @@ def resolve_paths_in_config(config: DictConfig, original_cwd: str = None) -> Dic
         "config_path",  # For reward function configs
         "checkpoint_path",
         "output_dir",
+        "sweagent_config_path",
+        "trajs_save_dir",
     ]
 
     # Resolve each path field if it exists

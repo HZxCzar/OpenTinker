@@ -1,2 +1,4 @@
 - name: generic_agent
   _target_: opentinker.server.generic_agent_loop.GenericAgentLoop
+- name: swe_agent
+  _target_: opentinker.server.swegym.agent_loop.SWEAgentLoop

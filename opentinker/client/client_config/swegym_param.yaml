@@ -1,0 +1,48 @@
+# SWE-Gym Training Configuration
+# Use with: python swegym_rl.py
+
+# Project settings
+project_name: opentinker
+experiment_name: swegym_training
+
+# Logging
+logger_backends: ["console", "wandb"]
+wandb_key: null
+
+# Model and tokenizer
+tokenizer_path: null
+
+# Dataset paths
+data_path: null
+val_data_path: null
+
+# SWE-agent configuration
+sweagent_config_path: null
+trajs_save_dir: ./swegym_trajectories
+swegym_max_iter: 8
+swegym_system_prompt: null
+
+# Training parameters
+batch_size: 4
+val_batch_size: 32
+num_workers: 0
+num_epochs: null
+num_steps: 1000
+save_freq: 20000
+test_freq: 10
+
+# Generation parameters
+temperature: 1.0
+top_p: 1.0
+max_new_tokens: 8192
+max_prompt_tokens: 4096
+
+# Algorithm (agent loop for SWE-Gym)
+algorithm: "agent_loop"
+adv_estimator: "grpo"
+rollout_n: 4
+
+# Scheduler settings
+scheduler_url: "http://0.0.0.0:8780"
+scheduler_api_key: null
+num_gpus: 4
