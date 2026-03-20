@@ -27,6 +27,7 @@ export TRANSFORMERS_OFFLINE="${TRANSFORMERS_OFFLINE:-1}"
 export HF_DATASETS_OFFLINE="${HF_DATASETS_OFFLINE:-1}"
 export WANDB_MODE="${WANDB_MODE:-offline}"
 export WANDB_ENTITY="${WANDB_ENTITY:-hz-czar-uiuc}"
+export WANDB_PROJECT="${WANDB_PROJECT:-co-evolve}"
 export WANDB_DISABLED="${WANDB_DISABLED:-false}"
 
 # Defaults (edit here if your machine setup differs)
@@ -209,6 +210,7 @@ run_base() {
   echo "[3/3] Starting BASE training..."
   python opentinker/client/sciworld_rl.py \
     tokenizer_path="${MODEL_PATH}" \
+    project_name="${WANDB_PROJECT}" \
     scheduler_url="http://${ENV_HOST}:${SCHEDULER_PORT}" \
     interaction.config.env_host="${ENV_HOST}" \
     interaction.config.env_port="${TRAIN_ENV_PORT}" \
@@ -222,6 +224,7 @@ run_wmc_erc() {
   python opentinker/client/sciworld_rl.py \
     --config-name sciworld_wmc_erc_param \
     tokenizer_path="${MODEL_PATH}" \
+    project_name="${WANDB_PROJECT}" \
     scheduler_url="http://${ENV_HOST}:${SCHEDULER_PORT}" \
     interaction.config.env_host="${ENV_HOST}" \
     interaction.config.env_port="${TRAIN_ENV_PORT}" \

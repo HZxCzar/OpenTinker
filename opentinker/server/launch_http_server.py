@@ -119,8 +119,8 @@ def main(cfg):
         # trainer
         cfg.trainer.critic_warmup = 0
         cfg.trainer.logger = ["console", "wandb"]
-        cfg.trainer.project_name = "OpenTinker"
-        cfg.trainer.experiment_name = "qwen2.5-3b"
+        cfg.trainer.project_name = cfg.get("project_name", "OpenTinker")
+        cfg.trainer.experiment_name = cfg.get("experiment_name", "qwen2.5-3b")
         cfg.trainer.n_gpus_per_node = 4
         cfg.trainer.val_before_train = True
         cfg.trainer.nnodes = 1
