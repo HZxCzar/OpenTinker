@@ -1,0 +1,132 @@
+INFO 03-20 16:13:23 [__init__.py:216] Automatically detected platform cuda.
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/client/sciworld_rl.py:15: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  @hydra.main(config_path="client_config", config_name="sciworld_param.yaml")
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/hydra/_internal/hydra.py:119: UserWarning: Future Hydra versions will no longer change working directory at job runtime by default.
+See https://hydra.cc/docs/1.2/upgrades/1.1_to_1.2/changes_to_job_working_dir/ for more information.
+  ret = run_job(
+============================================================
+Training with ScienceWorld Environment
+============================================================
+
+Connecting to scheduler at http://127.0.0.1:8780
+No API key provided - authentication may fail if scheduler requires it
+[2026-03-20 16:13:29,626][utils.http_training_client][INFO] - SchedulerClient initialized for scheduler: http://127.0.0.1:8780
+
+Submitting training job to scheduler...
+[2026-03-20 16:13:29,628][utils.http_training_client][INFO] - Submitting job to scheduler...
+[2026-03-20 16:13:39,208][utils.http_training_client][INFO] - Job submitted: 45b7ad24, status: RUNNING
+[2026-03-20 16:13:39,208][utils.http_training_client][INFO] - Job 45b7ad24 started immediately on http://10.247.14.78:38000
+
+Job 45b7ad24 allocated!
+  Server URL: http://10.247.14.78:38000
+  GPUs: None
+  Port: None
+============================================================
+
+Setting up GameEnvironment with SciWorldGame...
+  Environment endpoint: http://127.0.0.1:8092
+  Max steps: 30
+  Split: train
+  Job ID for stats: 45b7ad24
+Loading tokenizer from /inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218
+Creating training dataset (virtual_size=4000)
+[2026-03-20 16:13:39,583][opentinker.environment.base_data_generator][INFO] - DynamicGameDataset initialized: virtual_size=4000
+Creating training DataLoader (batch_size=4)
+Training dataloader: 1000 batches
+[2026-03-20 16:13:39,584][opentinker.environment.base_data_generator][INFO] - DynamicGameDataset initialized: virtual_size=32, seed=42
+Validation dataloader: 1 batches
+Generated interaction config: /tmp/sciworld_interaction_config_wgb6od67.yaml
+Environment created
+  Interaction config path: /tmp/sciworld_interaction_config_wgb6od67.yaml
+Connected to ScienceWorld server for metrics at http://127.0.0.1:8092
+
+Connecting to allocated server at http://10.247.14.78:38000
+[2026-03-20 16:13:39,594][utils.http_training_client][INFO] - HTTP Training Client initialized for server: http://10.247.14.78:38000
+[2026-03-20 16:13:39,595][utils.http_training_client][INFO] - Initialized tracking with backends: ['console']
+[ServiceClient] Passing multi_turn config to server: {'max_user_turns': 30, 'max_assistant_turns': 30, 'max_tokens_per_turn': 512, 'weave_project': 'opentinker/sciworld', 'experiment_name': 'sciworld_interaction'}
+[2026-03-20 16:13:39,598][utils.http_training_client][INFO] - Setting generation config: {'temperature': 1, 'top_p': 1, 'max_new_tokens': 4096}
+Environment config: {'actor_rollout_ref': {'rollout': {'multi_turn': {'interaction_config_path': '/tmp/sciworld_interaction_config_wgb6od67.yaml', 'interaction_config_content': "interaction:\n- class_name: opentinker.environment.gym_environment_interaction.GymEnvironmentInteraction\n  config:\n    env_endpoint: http://127.0.0.1:8092\n    env_host: 127.0.0.1\n    env_port: 8092\n    env_shards: 8\n    jar_path: null\n    job_id: 45b7ad24\n    local_thread_base: 20000\n    max_steps: 30\n    max_total_steps: 30\n    observation_template: '{observation}'\n    simplification_str: ''\n    split: train\n    task_ids: null\n    task_names: null\n    variation_indices: null\n  name: sciworld\n"}, 'agent': {'default_agent_loop': 'generic_agent'}}}}
+[2026-03-20 16:13:39,603][utils.http_training_client][INFO] - Setting config: {'data': {'max_prompt_length': 2048, 'max_response_length': 4096}, 'actor_rollout_ref': {'model': {'path': '/inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218'}, 'rollout': {'tensor_model_parallel_size': 2, 'multi_turn': {'max_user_turns': 30, 'max_assistant_turns': 30, 'max_tokens_per_turn': 512, 'weave_project': 'opentinker/sciworld', 'experiment_name': 'sciworld_interaction'}}}, 'critic': {'model': {'path': '/inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218'}}, 'trainer': {'n_gpus_per_node': 8, 'project_name': 'co-evolve', 'experiment_name': 'sciworld_training'}}
+
+Starting training for 1000 steps...
+Checkpoint save frequency: 200
+Validation frequency: 50
+============================================================
+[2026-03-20 16:13:39,637][utils.http_training_client][INFO] - Server health: {'status': 'healthy', 'server': 'ppo_training'}
+[2026-03-20 16:13:39,637][utils.http_training_client][INFO] - Training for 1000 steps (max 1 epochs, 1000 steps per epoch)
+[2026-03-20 16:13:39,637][utils.http_training_client][INFO] - Initializing workers on server (this may take several minutes)...
+[2026-03-20 16:17:14,918][utils.http_training_client][INFO] - Workers initialized successfully
+[2026-03-20 16:17:14,918][utils.http_training_client][INFO] - Running validation before training...
+[2026-03-20 16:17:14,918][utils.http_training_client][INFO] - Running validation...
+[2026-03-20 16:17:14,924][opentinker.environment.sciworld.sciworld_game][INFO] - Initializing ScienceWorldEnv(threadNum=20000, max_steps=30, split=train)
+Removed: /tmp/sciworld_interaction_config_wgb6od67.yaml
+Error executing job with overrides: ['tokenizer_path= /inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218 ', 'project_name=co-evolve', 'scheduler_url=http://127.0.0.1:8780', 'interaction.config.env_host=127.0.0.1', 'interaction.config.env_port=8092', 'logger_backends=["console"]', 'enable_tracing=false']
+Traceback (most recent call last):
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/client/sciworld_rl.py", line 136, in main
+    final_metrics = client.fit(
+                    ^^^^^^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/client/utils/http_training_client.py", line 777, in fit
+    val_metrics = self._run_validation(val_dataloader, game_stats_client)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/client/utils/http_training_client.py", line 950, in _run_validation
+    for i, batch_dict in enumerate(val_dataloader):
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 734, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 790, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/environment/base_data_generator.py", line 166, in __getitem__
+    sample = self.data_generator.generate_sample(item)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/environment/base_game.py", line 256, in generate_sample
+    initial_state = self._game.generate_initial_state()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/environment/sciworld/sciworld_game.py", line 652, in generate_initial_state
+    task_name, variation = self._select_task_and_variation()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/environment/sciworld/sciworld_game.py", line 301, in _select_task_and_variation
+    task_pool = self._resolve_task_pool()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/environment/sciworld/sciworld_game.py", line 159, in _resolve_task_pool
+    task_pool = self._get_all_task_names()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/environment/sciworld/sciworld_game.py", line 152, in _get_all_task_names
+    self._ensure_env()
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/environment/sciworld/sciworld_game.py", line 127, in _ensure_env
+    self._env = ScienceWorldEnv("", **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/scienceworld/scienceworld.py", line 46, in __init__
+    port, proc = launch_gateway(classpath=serverPath, die_on_exit=True, cwd=BASEPATH, return_proc=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/py4j/java_gateway.py", line 331, in launch_gateway
+    proc = Popen(
+           ^^^^^^
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/subprocess.py", line 1022, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/subprocess.py", line 1899, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'java'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+
+🧹 Cleaning up job 45b7ad24...
+[2026-03-20 16:17:15,018][utils.http_training_client][INFO] - Cancelling job 45b7ad24...
+Exception ignored in: <function ScienceWorldEnv.__del__ at 0x7fb6f86c99e0>
+Traceback (most recent call last):
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/scienceworld/scienceworld.py", line 161, in __del__
+    self.close()
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/scienceworld/scienceworld.py", line 152, in close
+    self._gateway.shutdown()
+    ^^^^^^^^^^^^^
+AttributeError: 'ScienceWorldEnv' object has no attribute '_gateway'
+✓ Job 45b7ad24 cancelled: Job cancelled successfully
