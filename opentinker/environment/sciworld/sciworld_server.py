@@ -3,6 +3,7 @@
 
 import argparse
 import os
+import signal
 import subprocess
 import sys
 import time
@@ -103,6 +104,13 @@ def main():
             f"{args.port}..{args.port + args.shards - 1}"
         )
         children: list[subprocess.Popen] = []
+
+        def _handle_termination(signum, frame):
+            raise KeyboardInterrupt
+
+        signal.signal(signal.SIGTERM, _handle_termination)
+        signal.signal(signal.SIGINT, _handle_termination)
+
         try:
             for i in range(args.shards):
                 port_i = args.port + i
