@@ -31,14 +31,15 @@ export WANDB_DISABLED="${WANDB_DISABLED:-false}"
 
 # Defaults (edit here if your machine setup differs)
 MODEL_REPO_CACHE_DIR="${HF_HOME}/hub/models--Qwen--Qwen3-8B/snapshots"
-SCHEDULER_PORT=8780
-TRAIN_ENV_PORT=8092
-DEV_ENV_PORT=8093
-TEST_ENV_PORT=8094
-ENV_HOST="127.0.0.1"
-AVAILABLE_GPUS='[0,1,2,3,4,5,6,7]'
-DEV_THREAD_BASE=40000
-TEST_THREAD_BASE=50000
+SCHEDULER_PORT="${SCHEDULER_PORT:-8780}"
+TRAIN_ENV_PORT="${TRAIN_ENV_PORT:-8092}"
+TRAIN_ENV_SHARDS="${TRAIN_ENV_SHARDS:-8}"
+DEV_ENV_PORT="${DEV_ENV_PORT:-8093}"
+TEST_ENV_PORT="${TEST_ENV_PORT:-8094}"
+ENV_HOST="${ENV_HOST:-127.0.0.1}"
+AVAILABLE_GPUS="${AVAILABLE_GPUS:-[0,1,2,3,4,5,6,7]}"
+DEV_THREAD_BASE="${DEV_THREAD_BASE:-40000}"
+TEST_THREAD_BASE="${TEST_THREAD_BASE:-50000}"
 
 timestamp="$(date +%Y%m%d_%H%M%S)"
 LOG_ROOT="${ROOT_DIR}/logs/${timestamp}_${MODE}"
@@ -48,14 +49,99 @@ SCHED_PID=""
 ENV_PID=""
 DEV_ENV_PID=""
 TEST_ENV_PID=""
+LAST_BG_PID=""
+
+spawn_bg() {
+  if command -v setsid >/dev/null 2>&1; then
+    setsid "$@" &
+  else
+    "$@" &
+  fi
+  LAST_BG_PID="$!"
+}
+
+terminate_process_group() {
+  local pid="${1:-}"
+  if [[ -z "${pid}" ]]; then
+    return 0
+  fi
+
+  if kill -0 "${pid}" 2>/dev/null; then
+    kill -- "-${pid}" 2>/dev/null || kill "${pid}" 2>/dev/null || true
+  fi
+}
+
+force_terminate_process_group() {
+  local pid="${1:-}"
+  if [[ -z "${pid}" ]]; then
+    return 0
+  fi
+
+  if kill -0 "${pid}" 2>/dev/null; then
+    kill -9 -- "-${pid}" 2>/dev/null || kill -9 "${pid}" 2>/dev/null || true
+  fi
+}
+
+find_sciworld_shard_pids() {
+  local split="$1"
+  local port="$2"
+  ps -eo pid=,args= | awk -v split="${split}" -v port="${port}" '
+    $0 ~ /opentinker\/environment\/sciworld\/sciworld_server\.py/ &&
+    $0 ~ ("--port " port "([[:space:]]|$)") &&
+    $0 ~ ("--split " split "([[:space:]]|$)") &&
+    $0 ~ /--shards 1([[:space:]]|$)/ {
+      print $1
+    }
+  '
+}
+
+cleanup_sciworld_shards() {
+  local split="$1"
+  local start_port="$2"
+  local shard_count="$3"
+  local -a pids=()
+  local -A seen=()
+
+  for ((i=0; i<shard_count; i++)); do
+    local port=$((start_port + i))
+    while IFS= read -r pid; do
+      if [[ -n "${pid}" && -z "${seen[${pid}]:-}" ]]; then
+        pids+=("${pid}")
+        seen["${pid}"]=1
+      fi
+    done < <(find_sciworld_shard_pids "${split}" "${port}")
+  done
+
+  if (( ${#pids[@]} == 0 )); then
+    return 0
+  fi
+
+  echo "[cleanup] Found stale ScienceWorld ${split} shard(s): ${pids[*]}"
+  kill "${pids[@]}" 2>/dev/null || true
+  sleep 2
+
+  for pid in "${pids[@]}"; do
+    if kill -0 "${pid}" 2>/dev/null; then
+      kill -9 "${pid}" 2>/dev/null || true
+    fi
+  done
+}
 
 cleanup() {
   local pids=("${SCHED_PID}" "${ENV_PID}" "${DEV_ENV_PID}" "${TEST_ENV_PID}")
   for pid in "${pids[@]}"; do
-    if [[ -n "${pid}" ]] && kill -0 "${pid}" 2>/dev/null; then
-      kill "${pid}" 2>/dev/null || true
-    fi
+    terminate_process_group "${pid}"
   done
+
+  sleep 1
+
+  for pid in "${pids[@]}"; do
+    force_terminate_process_group "${pid}"
+  done
+
+  cleanup_sciworld_shards train "${TRAIN_ENV_PORT}" "${TRAIN_ENV_SHARDS}"
+  cleanup_sciworld_shards dev "${DEV_ENV_PORT}" 1
+  cleanup_sciworld_shards test "${TEST_ENV_PORT}" 1
 }
 trap cleanup EXIT INT TERM
 
@@ -98,22 +184,24 @@ echo "============================================================"
 
 start_scheduler() {
   echo "[1/3] Starting scheduler..."
-  python opentinker/scheduler/launch_scheduler_kill.py \
+  spawn_bg python opentinker/scheduler/launch_scheduler_kill.py \
     available_gpus="${AVAILABLE_GPUS}" \
     scheduler_port="${SCHEDULER_PORT}" \
-    > "${LOG_ROOT}/scheduler.log" 2>&1 &
-  SCHED_PID="$!"
+    > "${LOG_ROOT}/scheduler.log" 2>&1
+  SCHED_PID="${LAST_BG_PID}"
   sleep 5
 }
 
 start_train_env() {
   echo "[2/3] Starting ScienceWorld train env..."
-  python -m opentinker.environment.sciworld.sciworld_server \
+  cleanup_sciworld_shards train "${TRAIN_ENV_PORT}" "${TRAIN_ENV_SHARDS}"
+  spawn_bg python -m opentinker.environment.sciworld.sciworld_server \
     --host 0.0.0.0 \
     --port "${TRAIN_ENV_PORT}" \
+    --shards "${TRAIN_ENV_SHARDS}" \
     --split train \
-    > "${LOG_ROOT}/env_train.log" 2>&1 &
-  ENV_PID="$!"
+    > "${LOG_ROOT}/env_train.log" 2>&1
+  ENV_PID="${LAST_BG_PID}"
   sleep 5
 }
 
@@ -144,24 +232,26 @@ run_wmc_erc() {
 
 start_eval_envs() {
   echo "[1/2] Starting ScienceWorld dev env..."
-  python -m opentinker.environment.sciworld.sciworld_server \
+  cleanup_sciworld_shards dev "${DEV_ENV_PORT}" 1
+  spawn_bg python -m opentinker.environment.sciworld.sciworld_server \
     --host 0.0.0.0 \
     --port "${DEV_ENV_PORT}" \
     --split dev \
     --shards 1 \
     --thread-base "${DEV_THREAD_BASE}" \
-    > "${LOG_ROOT}/env_dev.log" 2>&1 &
-  DEV_ENV_PID="$!"
+    > "${LOG_ROOT}/env_dev.log" 2>&1
+  DEV_ENV_PID="${LAST_BG_PID}"
 
   echo "[2/2] Starting ScienceWorld test env..."
-  python -m opentinker.environment.sciworld.sciworld_server \
+  cleanup_sciworld_shards test "${TEST_ENV_PORT}" 1
+  spawn_bg python -m opentinker.environment.sciworld.sciworld_server \
     --host 0.0.0.0 \
     --port "${TEST_ENV_PORT}" \
     --split test \
     --shards 1 \
     --thread-base "${TEST_THREAD_BASE}" \
-    > "${LOG_ROOT}/env_test.log" 2>&1 &
-  TEST_ENV_PID="$!"
+    > "${LOG_ROOT}/env_test.log" 2>&1
+  TEST_ENV_PID="${LAST_BG_PID}"
   sleep 5
 }
 
