@@ -26,6 +26,7 @@ export HF_HUB_OFFLINE="${HF_HUB_OFFLINE:-1}"
 export TRANSFORMERS_OFFLINE="${TRANSFORMERS_OFFLINE:-1}"
 export HF_DATASETS_OFFLINE="${HF_DATASETS_OFFLINE:-1}"
 export WANDB_MODE="${WANDB_MODE:-offline}"
+export WANDB_ENTITY="${WANDB_ENTITY:-hz-czar-uiuc}"
 export WANDB_DISABLED="${WANDB_DISABLED:-false}"
 
 # Defaults (edit here if your machine setup differs)

@@ -600,6 +600,14 @@ class ServiceClient:
         # 7.5 define general config
 
         # 同一个key出现两次，后者会将前者覆盖
+        trainer_cfg = {
+            "n_gpus_per_node": args.num_gpus,
+        }
+        if getattr(args, "project_name", None) is not None:
+            trainer_cfg["project_name"] = args.project_name
+        if getattr(args, "experiment_name", None) is not None:
+            trainer_cfg["experiment_name"] = args.experiment_name
+
         server_cfg = OmegaConf.create(
             {
                 "data": {
@@ -619,9 +627,7 @@ class ServiceClient:
                         "path": args.tokenizer_path,
                     },
                 },
-                "trainer": {
-                    "n_gpus_per_node": args.num_gpus,
-                },
+                "trainer": trainer_cfg,
             }
         )
 

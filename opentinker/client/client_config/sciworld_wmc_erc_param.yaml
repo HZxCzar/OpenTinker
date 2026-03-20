@@ -2,7 +2,7 @@
 # Use with: python sciworld_rl.py --config-name sciworld_wmc_erc_param
 
 # Project settings
-project_name: opentinker
+project_name: co-evolve
 experiment_name: sciworld_wmc_erc
 
 # Logging
