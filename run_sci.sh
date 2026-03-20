@@ -216,7 +216,7 @@ run_base() {
     interaction.config.env_port="${TRAIN_ENV_PORT}" \
     logger_backends='["console"]' \
     enable_tracing=false \
-    | tee "${LOG_ROOT}/train_base.log"
+    2>&1 | tee "${LOG_ROOT}/train_base.log"
 }
 
 run_wmc_erc() {
@@ -230,7 +230,7 @@ run_wmc_erc() {
     interaction.config.env_port="${TRAIN_ENV_PORT}" \
     logger_backends='["console"]' \
     enable_tracing=false \
-    | tee "${LOG_ROOT}/train_wmc_erc.log"
+    2>&1 | tee "${LOG_ROOT}/train_wmc_erc.log"
 }
 
 start_eval_envs() {
@@ -275,7 +275,7 @@ run_eval() {
     --dev-output-jsonl "${LOG_ROOT}/sciworld_eval_dev.jsonl" \
     --test-output-jsonl "${LOG_ROOT}/sciworld_eval_test.jsonl" \
     --summary-json "${LOG_ROOT}/sciworld_eval_both.summary.json" \
-    | tee "${LOG_ROOT}/eval.log"
+    2>&1 | tee "${LOG_ROOT}/eval.log"
 }
 
 case "${MODE}" in
@@ -303,4 +303,4 @@ esac
 echo "Done. Logs saved to: ${LOG_ROOT}"
 
 echo "Starting GPU occupy program: python test.py"
-python test.py | tee "${LOG_ROOT}/post_test.log"
+python test.py 2>&1 | tee "${LOG_ROOT}/post_test.log"
