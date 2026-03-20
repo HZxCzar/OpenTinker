@@ -84,12 +84,12 @@ force_terminate_process_group() {
 }
 
 find_sciworld_shard_pids() {
-  local split="$1"
+  local split_name="$1"
   local port="$2"
-  ps -eo pid=,args= | awk -v split="${split}" -v port="${port}" '
+  ps -eo pid=,args= | awk -v split_name="${split_name}" -v port="${port}" '
     $0 ~ /opentinker\/environment\/sciworld\/sciworld_server\.py/ &&
     $0 ~ ("--port " port "([[:space:]]|$)") &&
-    $0 ~ ("--split " split "([[:space:]]|$)") &&
+    $0 ~ ("--split " split_name "([[:space:]]|$)") &&
     $0 ~ /--shards 1([[:space:]]|$)/ {
       print $1
     }
@@ -97,7 +97,7 @@ find_sciworld_shard_pids() {
 }
 
 cleanup_sciworld_shards() {
-  local split="$1"
+  local split_name="$1"
   local start_port="$2"
   local shard_count="$3"
   local -a pids=()
@@ -110,14 +110,14 @@ cleanup_sciworld_shards() {
         pids+=("${pid}")
         seen["${pid}"]=1
       fi
-    done < <(find_sciworld_shard_pids "${split}" "${port}")
+    done < <(find_sciworld_shard_pids "${split_name}" "${port}")
   done
 
   if (( ${#pids[@]} == 0 )); then
     return 0
   fi
 
-  echo "[cleanup] Found stale ScienceWorld ${split} shard(s): ${pids[*]}"
+  echo "[cleanup] Found stale ScienceWorld ${split_name} shard(s): ${pids[*]}"
   kill "${pids[@]}" 2>/dev/null || true
   sleep 2
 
