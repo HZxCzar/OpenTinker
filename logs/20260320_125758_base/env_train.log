@@ -1,0 +1,277 @@
+INFO 03-20 12:59:11 [__init__.py:216] Automatically detected platform cuda.
+INFO 03-20 12:59:25 [__init__.py:216] Automatically detected platform cuda.
+INFO 03-20 12:59:26 [__init__.py:216] Automatically detected platform cuda.
+INFO 03-20 12:59:26 [__init__.py:216] Automatically detected platform cuda.
+INFO 03-20 12:59:26 [__init__.py:216] Automatically detected platform cuda.
+INFO 03-20 12:59:26 [__init__.py:216] Automatically detected platform cuda.
+INFO 03-20 12:59:27 [__init__.py:216] Automatically detected platform cuda.
+INFO 03-20 12:59:27 [__init__.py:216] Automatically detected platform cuda.
+
+ScienceWorld Game Configuration:
+  Max steps: 30
+  Split: train
+  Shards: 1
+  Task names: all
+  Task ids: none
+  Variations: split default
+  Simplification: (none)
+  Thread base: 0
+  Threads per shard: 256
+
+Reward structure:
+  Success: +10.0
+  Failure: -1.0
+  Step penalty: -0.01
+  Invalid action: -0.1
+
+SciWorldGame Server (FastAPI) running on http://0.0.0.0:8092
+Endpoints:
+  POST /reset       - Reset game
+  POST /step        - Execute action
+  GET  /stats       - Get step + cumulative stats
+  GET  /stats/step  - Get current step stats only
+  POST /stats/reset - Reset step stats (call before each batch)
+  GET  /health      - Health check
+Game config: {'max_steps': 30, 'split': 'train', 'task_names': None, 'task_ids': None, 'variation_indices': None, 'simplification_str': '', 'jar_path': None, 'thread_base': 0}
+
+Press Ctrl+C to stop.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8092): address already in use
+INFO 03-20 12:59:27 [__init__.py:216] Automatically detected platform cuda.
+
+ScienceWorld Game Configuration:
+  Max steps: 30
+  Split: train
+  Shards: 1
+  Task names: all
+  Task ids: none
+  Variations: split default
+  Simplification: (none)
+  Thread base: 256
+  Threads per shard: 256
+
+Reward structure:
+  Success: +10.0
+  Failure: -1.0
+  Step penalty: -0.01
+  Invalid action: -0.1
+
+SciWorldGame Server (FastAPI) running on http://0.0.0.0:8093
+Endpoints:
+  POST /reset       - Reset game
+  POST /step        - Execute action
+  GET  /stats       - Get step + cumulative stats
+  GET  /stats/step  - Get current step stats only
+  POST /stats/reset - Reset step stats (call before each batch)
+  GET  /health      - Health check
+Game config: {'max_steps': 30, 'split': 'train', 'task_names': None, 'task_ids': None, 'variation_indices': None, 'simplification_str': '', 'jar_path': None, 'thread_base': 256}
+
+Press Ctrl+C to stop.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8093): address already in use
+
+ScienceWorld Game Configuration:
+  Max steps: 30
+  Split: train
+  Shards: 1
+  Task names: all
+  Task ids: none
+  Variations: split default
+  Simplification: (none)
+  Thread base: 512
+  Threads per shard: 256
+
+Reward structure:
+  Success: +10.0
+  Failure: -1.0
+  Step penalty: -0.01
+  Invalid action: -0.1
+
+SciWorldGame Server (FastAPI) running on http://0.0.0.0:8094
+Endpoints:
+  POST /reset       - Reset game
+  POST /step        - Execute action
+  GET  /stats       - Get step + cumulative stats
+  GET  /stats/step  - Get current step stats only
+  POST /stats/reset - Reset step stats (call before each batch)
+  GET  /health      - Health check
+Game config: {'max_steps': 30, 'split': 'train', 'task_names': None, 'task_ids': None, 'variation_indices': None, 'simplification_str': '', 'jar_path': None, 'thread_base': 512}
+
+Press Ctrl+C to stop.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8094): address already in use
+
+ScienceWorld Game Configuration:
+  Max steps: 30
+  Split: train
+  Shards: 1
+  Task names: all
+  Task ids: none
+  Variations: split default
+  Simplification: (none)
+  Thread base: 768
+  Threads per shard: 256
+
+Reward structure:
+  Success: +10.0
+  Failure: -1.0
+  Step penalty: -0.01
+  Invalid action: -0.1
+
+SciWorldGame Server (FastAPI) running on http://0.0.0.0:8095
+Endpoints:
+  POST /reset       - Reset game
+  POST /step        - Execute action
+  GET  /stats       - Get step + cumulative stats
+  GET  /stats/step  - Get current step stats only
+  POST /stats/reset - Reset step stats (call before each batch)
+  GET  /health      - Health check
+Game config: {'max_steps': 30, 'split': 'train', 'task_names': None, 'task_ids': None, 'variation_indices': None, 'simplification_str': '', 'jar_path': None, 'thread_base': 768}
+
+Press Ctrl+C to stop.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8095): address already in use
+
+ScienceWorld Game Configuration:
+  Max steps: 30
+  Split: train
+  Shards: 1
+  Task names: all
+  Task ids: none
+  Variations: split default
+  Simplification: (none)
+  Thread base: 1024
+  Threads per shard: 256
+
+Reward structure:
+  Success: +10.0
+  Failure: -1.0
+  Step penalty: -0.01
+  Invalid action: -0.1
+
+SciWorldGame Server (FastAPI) running on http://0.0.0.0:8096
+Endpoints:
+  POST /reset       - Reset game
+  POST /step        - Execute action
+  GET  /stats       - Get step + cumulative stats
+  GET  /stats/step  - Get current step stats only
+  POST /stats/reset - Reset step stats (call before each batch)
+  GET  /health      - Health check
+Game config: {'max_steps': 30, 'split': 'train', 'task_names': None, 'task_ids': None, 'variation_indices': None, 'simplification_str': '', 'jar_path': None, 'thread_base': 1024}
+
+Press Ctrl+C to stop.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8096): address already in use
+
+ScienceWorld Game Configuration:
+  Max steps: 30
+  Split: train
+  Shards: 1
+  Task names: all
+  Task ids: none
+  Variations: split default
+  Simplification: (none)
+  Thread base: 1280
+  Threads per shard: 256
+
+Reward structure:
+  Success: +10.0
+  Failure: -1.0
+  Step penalty: -0.01
+  Invalid action: -0.1
+
+SciWorldGame Server (FastAPI) running on http://0.0.0.0:8097
+Endpoints:
+  POST /reset       - Reset game
+  POST /step        - Execute action
+  GET  /stats       - Get step + cumulative stats
+  GET  /stats/step  - Get current step stats only
+  POST /stats/reset - Reset step stats (call before each batch)
+  GET  /health      - Health check
+Game config: {'max_steps': 30, 'split': 'train', 'task_names': None, 'task_ids': None, 'variation_indices': None, 'simplification_str': '', 'jar_path': None, 'thread_base': 1280}
+
+Press Ctrl+C to stop.
+
+ScienceWorld Game Configuration:
+  Max steps: 30
+  Split: train
+  Shards: 1
+  Task names: all
+  Task ids: none
+  Variations: split default
+  Simplification: (none)
+  Thread base: 1536
+  Threads per shard: 256
+
+Reward structure:
+  Success: +10.0
+  Failure: -1.0
+  Step penalty: -0.01
+  Invalid action: -0.1
+
+SciWorldGame Server (FastAPI) running on http://0.0.0.0:8098
+Endpoints:
+  POST /reset       - Reset game
+  POST /step        - Execute action
+  GET  /stats       - Get step + cumulative stats
+  GET  /stats/step  - Get current step stats only
+  POST /stats/reset - Reset step stats (call before each batch)
+  GET  /health      - Health check
+Game config: {'max_steps': 30, 'split': 'train', 'task_names': None, 'task_ids': None, 'variation_indices': None, 'simplification_str': '', 'jar_path': None, 'thread_base': 1536}
+
+Press Ctrl+C to stop.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8097): address already in use
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8098): address already in use
+
+ScienceWorld Game Configuration:
+  Max steps: 30
+  Split: train
+  Shards: 1
+  Task names: all
+  Task ids: none
+  Variations: split default
+  Simplification: (none)
+  Thread base: 1792
+  Threads per shard: 256
+
+Reward structure:
+  Success: +10.0
+  Failure: -1.0
+  Step penalty: -0.01
+  Invalid action: -0.1
+
+SciWorldGame Server (FastAPI) running on http://0.0.0.0:8099
+Endpoints:
+  POST /reset       - Reset game
+  POST /step        - Execute action
+  GET  /stats       - Get step + cumulative stats
+  GET  /stats/step  - Get current step stats only
+  POST /stats/reset - Reset step stats (call before each batch)
+  GET  /health      - Health check
+Game config: {'max_steps': 30, 'split': 'train', 'task_names': None, 'task_ids': None, 'variation_indices': None, 'simplification_str': '', 'jar_path': None, 'thread_base': 1792}
+
+Press Ctrl+C to stop.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8099): address already in use
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/environment/sciworld/sciworld_server.py", line 187, in <module>
+    main()
+  File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/environment/sciworld/sciworld_server.py", line 147, in main
+    raise RuntimeError(
+RuntimeError: Shard process exited early with code 1: pid=1053474
+
+ScienceWorld Game Configuration:
+  Max steps: 30
+  Split: train
+  Shards: 8
+  Task names: all
+  Task ids: none
+  Variations: split default
+  Simplification: (none)
+  Thread base: 0
+  Threads per shard: 256
+
+Reward structure:
+  Success: +10.0
+  Failure: -1.0
+  Step penalty: -0.01
+  Invalid action: -0.1
+
+Starting sharded mode: 8 shards on ports 8092..8099
+Shards started. Press Ctrl+C to stop all shards.

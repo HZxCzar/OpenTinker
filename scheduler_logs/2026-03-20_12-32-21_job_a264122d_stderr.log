@@ -1,0 +1,623 @@
+INFO:     Started server process [696350]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:38000 (Press CTRL+C to quit)
+2026-03-20 12:32:42,578	INFO worker.py:2004 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8266 [39m[22m
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/ray/_private/worker.py:2052: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/server/http_training_server.py:459: UserWarning: Disabled critic as algorithm.adv_estimator != gae. If it is not intended, please set critic.enable=True
+  if need_critic(config):
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/backend_patch/verl/trainer/ppo/ray_trainer.py:393: UserWarning: Disabled critic as algorithm.adv_estimator != gae. If it is not intended, please set critic.enable=True
+  self.use_critic = need_critic(self.config)
+[36m(WorkerDict pid=716959)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716960)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716961)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716958)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716956)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716963)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716966)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716965)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716959)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716960)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716961)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716958)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716956)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716963)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716966)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716965)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=716959)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716960)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716961)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716958)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716963)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716965)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716966)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716956)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716959)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:18<01:12, 18.03s/it]
+[36m(WorkerDict pid=716960)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:18<01:12, 18.03s/it]
+[36m(WorkerDict pid=716961)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:18<01:12, 18.03s/it]
+[36m(WorkerDict pid=716958)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:18<01:12, 18.03s/it]
+[36m(WorkerDict pid=716956)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:18<01:12, 18.03s/it]
+[36m(WorkerDict pid=716963)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:18<01:12, 18.03s/it]
+[36m(WorkerDict pid=716966)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:18<01:12, 18.03s/it]
+[36m(WorkerDict pid=716965)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:18<01:12, 18.03s/it]
+[36m(WorkerDict pid=716959)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:35<00:53, 17.90s/it]
+[36m(WorkerDict pid=716960)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:35<00:53, 17.90s/it]
+[36m(WorkerDict pid=716961)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:35<00:53, 17.90s/it]
+[36m(WorkerDict pid=716958)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:35<00:53, 17.90s/it]
+[36m(WorkerDict pid=716956)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:35<00:53, 17.90s/it]
+[36m(WorkerDict pid=716963)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:35<00:53, 17.90s/it]
+[36m(WorkerDict pid=716966)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:35<00:53, 17.90s/it]
+[36m(WorkerDict pid=716965)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:35<00:53, 17.90s/it]
+[36m(WorkerDict pid=716959)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:53<00:35, 17.85s/it]
+[36m(WorkerDict pid=716960)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:53<00:35, 17.85s/it]
+[36m(WorkerDict pid=716961)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:53<00:35, 17.85s/it]
+[36m(WorkerDict pid=716958)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:53<00:35, 17.85s/it]
+[36m(WorkerDict pid=716956)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:53<00:35, 17.84s/it]
+[36m(WorkerDict pid=716963)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:53<00:35, 17.85s/it]
+[36m(WorkerDict pid=716966)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:53<00:35, 17.85s/it]
+[36m(WorkerDict pid=716965)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:53<00:35, 17.85s/it]
+[36m(WorkerDict pid=716959)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:08<00:16, 16.69s/it]
+[36m(WorkerDict pid=716960)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:08<00:16, 16.69s/it]
+[36m(WorkerDict pid=716961)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:08<00:16, 16.69s/it]
+[36m(WorkerDict pid=716958)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:08<00:16, 16.69s/it]
+[36m(WorkerDict pid=716956)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:08<00:16, 16.69s/it]
+[36m(WorkerDict pid=716963)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:08<00:16, 16.69s/it]
+[36m(WorkerDict pid=716966)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:08<00:16, 16.69s/it]
+[36m(WorkerDict pid=716965)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:08<00:16, 16.69s/it]
+[36m(WorkerDict pid=716956)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 12.85s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 14.91s/it]
+[36m(WorkerDict pid=716959)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 12.93s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 14.96s/it]
+[36m(WorkerDict pid=716960)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 12.92s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 14.95s/it]
+[36m(WorkerDict pid=716958)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 12.91s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 14.95s/it]
+[36m(WorkerDict pid=716963)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 12.92s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 14.96s/it]
+[36m(WorkerDict pid=716966)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 12.93s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 14.96s/it]
+[36m(WorkerDict pid=716965)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 12.92s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 14.95s/it]
+[36m(WorkerDict pid=716961)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 12.93s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:14<00:00, 14.96s/it]
+[36m(WorkerDict pid=716956)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716958)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716960)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716966)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716961)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716965)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716959)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716963)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=716956)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:05<00:23,  6.00s/it]
+[36m(WorkerDict pid=716960)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.15s/it]
+[36m(WorkerDict pid=716958)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.16s/it]
+[36m(WorkerDict pid=716966)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.15s/it]
+[36m(WorkerDict pid=716965)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.14s/it]
+[36m(WorkerDict pid=716959)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.20s/it]
+[36m(WorkerDict pid=716961)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.23s/it]
+[36m(WorkerDict pid=716963)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.22s/it]
+[36m(WorkerDict pid=716959)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.04s/it]
+[36m(WorkerDict pid=716956)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.07s/it]
+[36m(WorkerDict pid=716963)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.06s/it]
+[36m(WorkerDict pid=716966)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.08s/it]
+[36m(WorkerDict pid=716960)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.09s/it]
+[36m(WorkerDict pid=716958)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.09s/it]
+[36m(WorkerDict pid=716965)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.09s/it]
+[36m(WorkerDict pid=716961)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.20s/it]
+[36m(WorkerDict pid=716959)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.07s/it]
+[36m(WorkerDict pid=716960)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.08s/it]
+[36m(WorkerDict pid=716958)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.08s/it]
+[36m(WorkerDict pid=716956)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.10s/it]
+[36m(WorkerDict pid=716963)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.07s/it]
+[36m(WorkerDict pid=716966)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.08s/it]
+[36m(WorkerDict pid=716965)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.08s/it]
+[36m(WorkerDict pid=716961)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.21s/it]
+[36m(WorkerDict pid=716959)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:22<00:05,  5.55s/it]
+[36m(WorkerDict pid=716960)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.56s/it]
+[36m(WorkerDict pid=716958)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.56s/it]
+[36m(WorkerDict pid=716956)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.58s/it]
+[36m(WorkerDict pid=716963)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.55s/it]
+[36m(WorkerDict pid=716966)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.56s/it]
+[36m(WorkerDict pid=716965)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.55s/it]
+[36m(WorkerDict pid=716961)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.67s/it]
+[36m(WorkerDict pid=716956)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.19s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.95s/it]
+[36m(WorkerDict pid=716959)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.24s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.98s/it]
+[36m(WorkerDict pid=716960)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.23s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.98s/it]
+[36m(WorkerDict pid=716958)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.23s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.98s/it]
+[36m(WorkerDict pid=716963)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.23s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.98s/it]
+[36m(WorkerDict pid=716966)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.23s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.98s/it]
+[36m(WorkerDict pid=716965)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.23s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.98s/it]
+[36m(WorkerDict pid=716961)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  4.28s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  5.06s/it]
+[36m(WorkerDict pid=716959)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=716959)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=716960)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=716960)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=716961)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=716961)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=716958)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=716958)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=716963)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=716963)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=716966)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=716966)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=716965)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=716965)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=716956)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=716956)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=716961)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=716961)[0m   warnings.warn(
+[36m(WorkerDict pid=716963)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=716963)[0m   warnings.warn(
+[36m(WorkerDict pid=716966)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=716966)[0m   warnings.warn(
+[36m(WorkerDict pid=716960)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=716960)[0m   warnings.warn(
+[36m(WorkerDict pid=716956)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=716956)[0m   warnings.warn(
+[36m(WorkerDict pid=716958)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=716958)[0m   warnings.warn(
+[36m(WorkerDict pid=716965)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=716965)[0m   warnings.warn(
+[36m(WorkerDict pid=716959)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=716959)[0m   warnings.warn(
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+  warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(vLLMHttpServer pid=817210)[0m INFO:2026-03-20 12:36:40,716:vLLMHttpServer, replica_rank: 1, master address: 10.247.14.78, master port: 38759, data parallel master port: 34497
+[36m(vLLMHttpServer pid=817211)[0m INFO:2026-03-20 12:36:40,787:vLLMHttpServer, replica_rank: 0, master address: 10.247.14.78, master port: 40487, data parallel master port: 44407
+[36m(vLLMHttpServer pid=817211)[0m INFO:2026-03-20 12:36:40,791:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=817211)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=817211)[0m INFO:2026-03-20 12:36:40,816:replica_rank=0, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_716956_root.ipc', 'ipc:///tmp/verl_vllm_zmq_716958_root.ipc']
+[36m(vLLMHttpServer pid=817210)[0m INFO:2026-03-20 12:36:40,789:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=817210)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=817210)[0m INFO:2026-03-20 12:36:40,816:replica_rank=1, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_716959_root.ipc', 'ipc:///tmp/verl_vllm_zmq_716961_root.ipc']
+[36m(vLLMHttpServer pid=817206)[0m INFO:2026-03-20 12:36:40,758:vLLMHttpServer, replica_rank: 2, master address: 10.247.14.78, master port: 38645, data parallel master port: 38777
+[36m(vLLMHttpServer pid=817206)[0m INFO:2026-03-20 12:36:40,789:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=817206)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=817206)[0m INFO:2026-03-20 12:36:40,816:replica_rank=2, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_716963_root.ipc', 'ipc:///tmp/verl_vllm_zmq_716965_root.ipc']
+[36m(vLLMHttpServer pid=817208)[0m INFO:2026-03-20 12:36:40,915:vLLMHttpServer, replica_rank: 3, master address: 10.247.14.78, master port: 35369, data parallel master port: 39881
+[36m(vLLMHttpServer pid=817208)[0m INFO:2026-03-20 12:36:40,919:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=817208)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=817208)[0m INFO:2026-03-20 12:36:40,939:replica_rank=3, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_716966_root.ipc', 'ipc:///tmp/verl_vllm_zmq_716960_root.ipc']
+[36m(WorkerDict pid=716959)[0m ERROR:2026-03-20 12:37:05,862:vLLMAsyncRollout _loop_forever error: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716959)[0m Traceback (most recent call last):
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 574, in _loop_forever
+[36m(WorkerDict pid=716959)[0m     result = await self._execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716959)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 611, in _execute_method
+[36m(WorkerDict pid=716959)[0m     return self.inference_engine.execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716959)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 276, in execute_method
+[36m(WorkerDict pid=716959)[0m     raise e
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 267, in execute_method
+[36m(WorkerDict pid=716959)[0m     return run_method(self, method, args, kwargs)
+[36m(WorkerDict pid=716959)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/utils/__init__.py", line 3122, in run_method
+[36m(WorkerDict pid=716959)[0m     return func(*args, **kwargs)
+[36m(WorkerDict pid=716959)[0m            ^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 259, in init_device
+[36m(WorkerDict pid=716959)[0m     self.worker.init_device()  # type: ignore
+[36m(WorkerDict pid=716959)[0m     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 169, in init_device
+[36m(WorkerDict pid=716959)[0m     init_worker_distributed_environment(self.vllm_config, self.rank,
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 705, in init_worker_distributed_environment
+[36m(WorkerDict pid=716959)[0m     ensure_model_parallel_initialized(
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1228, in ensure_model_parallel_initialized
+[36m(WorkerDict pid=716959)[0m     initialize_model_parallel(tensor_model_parallel_size,
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1152, in initialize_model_parallel
+[36m(WorkerDict pid=716959)[0m     _TP = init_model_parallel_group(group_ranks,
+[36m(WorkerDict pid=716959)[0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 924, in init_model_parallel_group
+[36m(WorkerDict pid=716959)[0m     return GroupCoordinator(
+[36m(WorkerDict pid=716959)[0m            ^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 255, in __init__
+[36m(WorkerDict pid=716959)[0m     self.device_communicator = device_comm_cls(
+[36m(WorkerDict pid=716959)[0m                                ^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/cuda_communicator.py", line 68, in __init__
+[36m(WorkerDict pid=716959)[0m     self.symm_mem_comm = SymmMemCommunicator(
+[36m(WorkerDict pid=716959)[0m                          ^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/symm_mem.py", line 88, in __init__
+[36m(WorkerDict pid=716959)[0m     handle = torch_symm_mem.rendezvous(self.buffer, self.group.group_name)
+[36m(WorkerDict pid=716959)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716959)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/_symmetric_memory/__init__.py", line 1711, in rendezvous
+[36m(WorkerDict pid=716959)[0m     return _SymmetricMemory.rendezvous(tensor, group_name)
+[36m(WorkerDict pid=716959)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716959)[0m RuntimeError: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716960)[0m ERROR:2026-03-20 12:37:05,862:vLLMAsyncRollout _loop_forever error: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716960)[0m Traceback (most recent call last):
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 574, in _loop_forever
+[36m(WorkerDict pid=716960)[0m     result = await self._execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716960)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 611, in _execute_method
+[36m(WorkerDict pid=716960)[0m     return self.inference_engine.execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716960)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 276, in execute_method
+[36m(WorkerDict pid=716960)[0m     raise e
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 267, in execute_method
+[36m(WorkerDict pid=716960)[0m     return run_method(self, method, args, kwargs)
+[36m(WorkerDict pid=716960)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/utils/__init__.py", line 3122, in run_method
+[36m(WorkerDict pid=716960)[0m     return func(*args, **kwargs)
+[36m(WorkerDict pid=716960)[0m            ^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 259, in init_device
+[36m(WorkerDict pid=716960)[0m     self.worker.init_device()  # type: ignore
+[36m(WorkerDict pid=716960)[0m     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 169, in init_device
+[36m(WorkerDict pid=716960)[0m     init_worker_distributed_environment(self.vllm_config, self.rank,
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 705, in init_worker_distributed_environment
+[36m(WorkerDict pid=716960)[0m     ensure_model_parallel_initialized(
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1228, in ensure_model_parallel_initialized
+[36m(WorkerDict pid=716960)[0m     initialize_model_parallel(tensor_model_parallel_size,
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1152, in initialize_model_parallel
+[36m(WorkerDict pid=716960)[0m     _TP = init_model_parallel_group(group_ranks,
+[36m(WorkerDict pid=716960)[0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 924, in init_model_parallel_group
+[36m(WorkerDict pid=716960)[0m     return GroupCoordinator(
+[36m(WorkerDict pid=716960)[0m            ^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 255, in __init__
+[36m(WorkerDict pid=716960)[0m     self.device_communicator = device_comm_cls(
+[36m(WorkerDict pid=716960)[0m                                ^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/cuda_communicator.py", line 68, in __init__
+[36m(WorkerDict pid=716960)[0m     self.symm_mem_comm = SymmMemCommunicator(
+[36m(WorkerDict pid=716960)[0m                          ^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/symm_mem.py", line 88, in __init__
+[36m(WorkerDict pid=716960)[0m     handle = torch_symm_mem.rendezvous(self.buffer, self.group.group_name)
+[36m(WorkerDict pid=716960)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716960)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/_symmetric_memory/__init__.py", line 1711, in rendezvous
+[36m(WorkerDict pid=716960)[0m     return _SymmetricMemory.rendezvous(tensor, group_name)
+[36m(WorkerDict pid=716960)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716960)[0m RuntimeError: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716961)[0m ERROR:2026-03-20 12:37:05,862:vLLMAsyncRollout _loop_forever error: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716961)[0m Traceback (most recent call last):
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 574, in _loop_forever
+[36m(WorkerDict pid=716961)[0m     result = await self._execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716961)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 611, in _execute_method
+[36m(WorkerDict pid=716961)[0m     return self.inference_engine.execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716961)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 276, in execute_method
+[36m(WorkerDict pid=716961)[0m     raise e
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 267, in execute_method
+[36m(WorkerDict pid=716961)[0m     return run_method(self, method, args, kwargs)
+[36m(WorkerDict pid=716961)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/utils/__init__.py", line 3122, in run_method
+[36m(WorkerDict pid=716961)[0m     return func(*args, **kwargs)
+[36m(WorkerDict pid=716961)[0m            ^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 259, in init_device
+[36m(WorkerDict pid=716961)[0m     self.worker.init_device()  # type: ignore
+[36m(WorkerDict pid=716961)[0m     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 169, in init_device
+[36m(WorkerDict pid=716961)[0m     init_worker_distributed_environment(self.vllm_config, self.rank,
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 705, in init_worker_distributed_environment
+[36m(WorkerDict pid=716961)[0m     ensure_model_parallel_initialized(
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1228, in ensure_model_parallel_initialized
+[36m(WorkerDict pid=716961)[0m     initialize_model_parallel(tensor_model_parallel_size,
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1152, in initialize_model_parallel
+[36m(WorkerDict pid=716961)[0m     _TP = init_model_parallel_group(group_ranks,
+[36m(WorkerDict pid=716961)[0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 924, in init_model_parallel_group
+[36m(WorkerDict pid=716961)[0m     return GroupCoordinator(
+[36m(WorkerDict pid=716961)[0m            ^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 255, in __init__
+[36m(WorkerDict pid=716961)[0m     self.device_communicator = device_comm_cls(
+[36m(WorkerDict pid=716961)[0m                                ^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/cuda_communicator.py", line 68, in __init__
+[36m(WorkerDict pid=716961)[0m     self.symm_mem_comm = SymmMemCommunicator(
+[36m(WorkerDict pid=716961)[0m                          ^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/symm_mem.py", line 88, in __init__
+[36m(WorkerDict pid=716961)[0m     handle = torch_symm_mem.rendezvous(self.buffer, self.group.group_name)
+[36m(WorkerDict pid=716961)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716961)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/_symmetric_memory/__init__.py", line 1711, in rendezvous
+[36m(WorkerDict pid=716961)[0m     return _SymmetricMemory.rendezvous(tensor, group_name)
+[36m(WorkerDict pid=716961)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716961)[0m RuntimeError: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716958)[0m ERROR:2026-03-20 12:37:05,862:vLLMAsyncRollout _loop_forever error: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716958)[0m Traceback (most recent call last):
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 574, in _loop_forever
+[36m(WorkerDict pid=716958)[0m     result = await self._execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716958)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 611, in _execute_method
+[36m(WorkerDict pid=716958)[0m     return self.inference_engine.execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716958)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 276, in execute_method
+[36m(WorkerDict pid=716958)[0m     raise e
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 267, in execute_method
+[36m(WorkerDict pid=716958)[0m     return run_method(self, method, args, kwargs)
+[36m(WorkerDict pid=716958)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/utils/__init__.py", line 3122, in run_method
+[36m(WorkerDict pid=716958)[0m     return func(*args, **kwargs)
+[36m(WorkerDict pid=716958)[0m            ^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 259, in init_device
+[36m(WorkerDict pid=716958)[0m     self.worker.init_device()  # type: ignore
+[36m(WorkerDict pid=716958)[0m     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 169, in init_device
+[36m(WorkerDict pid=716958)[0m     init_worker_distributed_environment(self.vllm_config, self.rank,
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 705, in init_worker_distributed_environment
+[36m(WorkerDict pid=716958)[0m     ensure_model_parallel_initialized(
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1228, in ensure_model_parallel_initialized
+[36m(WorkerDict pid=716958)[0m     initialize_model_parallel(tensor_model_parallel_size,
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1152, in initialize_model_parallel
+[36m(WorkerDict pid=716958)[0m     _TP = init_model_parallel_group(group_ranks,
+[36m(WorkerDict pid=716958)[0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 924, in init_model_parallel_group
+[36m(WorkerDict pid=716958)[0m     return GroupCoordinator(
+[36m(WorkerDict pid=716958)[0m            ^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 255, in __init__
+[36m(WorkerDict pid=716958)[0m     self.device_communicator = device_comm_cls(
+[36m(WorkerDict pid=716958)[0m                                ^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/cuda_communicator.py", line 68, in __init__
+[36m(WorkerDict pid=716958)[0m     self.symm_mem_comm = SymmMemCommunicator(
+[36m(WorkerDict pid=716958)[0m                          ^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/symm_mem.py", line 88, in __init__
+[36m(WorkerDict pid=716958)[0m     handle = torch_symm_mem.rendezvous(self.buffer, self.group.group_name)
+[36m(WorkerDict pid=716958)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716958)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/_symmetric_memory/__init__.py", line 1711, in rendezvous
+[36m(WorkerDict pid=716958)[0m     return _SymmetricMemory.rendezvous(tensor, group_name)
+[36m(WorkerDict pid=716958)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716958)[0m RuntimeError: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716956)[0m ERROR:2026-03-20 12:37:05,862:vLLMAsyncRollout _loop_forever error: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716956)[0m Traceback (most recent call last):
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 574, in _loop_forever
+[36m(WorkerDict pid=716956)[0m     result = await self._execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716956)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 611, in _execute_method
+[36m(WorkerDict pid=716956)[0m     return self.inference_engine.execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716956)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 276, in execute_method
+[36m(WorkerDict pid=716956)[0m     raise e
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 267, in execute_method
+[36m(WorkerDict pid=716956)[0m     return run_method(self, method, args, kwargs)
+[36m(WorkerDict pid=716956)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/utils/__init__.py", line 3122, in run_method
+[36m(WorkerDict pid=716956)[0m     return func(*args, **kwargs)
+[36m(WorkerDict pid=716956)[0m            ^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 259, in init_device
+[36m(WorkerDict pid=716956)[0m     self.worker.init_device()  # type: ignore
+[36m(WorkerDict pid=716956)[0m     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 169, in init_device
+[36m(WorkerDict pid=716956)[0m     init_worker_distributed_environment(self.vllm_config, self.rank,
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 705, in init_worker_distributed_environment
+[36m(WorkerDict pid=716956)[0m     ensure_model_parallel_initialized(
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1228, in ensure_model_parallel_initialized
+[36m(WorkerDict pid=716956)[0m     initialize_model_parallel(tensor_model_parallel_size,
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1152, in initialize_model_parallel
+[36m(WorkerDict pid=716956)[0m     _TP = init_model_parallel_group(group_ranks,
+[36m(WorkerDict pid=716956)[0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 924, in init_model_parallel_group
+[36m(WorkerDict pid=716956)[0m     return GroupCoordinator(
+[36m(WorkerDict pid=716956)[0m            ^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 255, in __init__
+[36m(WorkerDict pid=716956)[0m     self.device_communicator = device_comm_cls(
+[36m(WorkerDict pid=716956)[0m                                ^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/cuda_communicator.py", line 68, in __init__
+[36m(WorkerDict pid=716956)[0m     self.symm_mem_comm = SymmMemCommunicator(
+[36m(WorkerDict pid=716956)[0m                          ^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/symm_mem.py", line 88, in __init__
+[36m(WorkerDict pid=716956)[0m     handle = torch_symm_mem.rendezvous(self.buffer, self.group.group_name)
+[36m(WorkerDict pid=716956)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716956)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/_symmetric_memory/__init__.py", line 1711, in rendezvous
+[36m(WorkerDict pid=716956)[0m     return _SymmetricMemory.rendezvous(tensor, group_name)
+[36m(WorkerDict pid=716956)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716956)[0m RuntimeError: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716963)[0m ERROR:2026-03-20 12:37:05,862:vLLMAsyncRollout _loop_forever error: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716963)[0m Traceback (most recent call last):
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 574, in _loop_forever
+[36m(WorkerDict pid=716963)[0m     result = await self._execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716963)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 611, in _execute_method
+[36m(WorkerDict pid=716963)[0m     return self.inference_engine.execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716963)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 276, in execute_method
+[36m(WorkerDict pid=716963)[0m     raise e
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 267, in execute_method
+[36m(WorkerDict pid=716963)[0m     return run_method(self, method, args, kwargs)
+[36m(WorkerDict pid=716963)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/utils/__init__.py", line 3122, in run_method
+[36m(WorkerDict pid=716963)[0m     return func(*args, **kwargs)
+[36m(WorkerDict pid=716963)[0m            ^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 259, in init_device
+[36m(WorkerDict pid=716963)[0m     self.worker.init_device()  # type: ignore
+[36m(WorkerDict pid=716963)[0m     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 169, in init_device
+[36m(WorkerDict pid=716963)[0m     init_worker_distributed_environment(self.vllm_config, self.rank,
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 705, in init_worker_distributed_environment
+[36m(WorkerDict pid=716963)[0m     ensure_model_parallel_initialized(
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1228, in ensure_model_parallel_initialized
+[36m(WorkerDict pid=716963)[0m     initialize_model_parallel(tensor_model_parallel_size,
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1152, in initialize_model_parallel
+[36m(WorkerDict pid=716963)[0m     _TP = init_model_parallel_group(group_ranks,
+[36m(WorkerDict pid=716963)[0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 924, in init_model_parallel_group
+[36m(WorkerDict pid=716963)[0m     return GroupCoordinator(
+[36m(WorkerDict pid=716963)[0m            ^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 255, in __init__
+[36m(WorkerDict pid=716963)[0m     self.device_communicator = device_comm_cls(
+[36m(WorkerDict pid=716963)[0m                                ^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/cuda_communicator.py", line 68, in __init__
+[36m(WorkerDict pid=716963)[0m     self.symm_mem_comm = SymmMemCommunicator(
+[36m(WorkerDict pid=716963)[0m                          ^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/symm_mem.py", line 88, in __init__
+[36m(WorkerDict pid=716963)[0m     handle = torch_symm_mem.rendezvous(self.buffer, self.group.group_name)
+[36m(WorkerDict pid=716963)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716963)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/_symmetric_memory/__init__.py", line 1711, in rendezvous
+[36m(WorkerDict pid=716963)[0m     return _SymmetricMemory.rendezvous(tensor, group_name)
+[36m(WorkerDict pid=716963)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716963)[0m RuntimeError: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716966)[0m ERROR:2026-03-20 12:37:05,862:vLLMAsyncRollout _loop_forever error: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716966)[0m Traceback (most recent call last):
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 574, in _loop_forever
+[36m(WorkerDict pid=716966)[0m     result = await self._execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716966)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 611, in _execute_method
+[36m(WorkerDict pid=716966)[0m     return self.inference_engine.execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716966)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 276, in execute_method
+[36m(WorkerDict pid=716966)[0m     raise e
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 267, in execute_method
+[36m(WorkerDict pid=716966)[0m     return run_method(self, method, args, kwargs)
+[36m(WorkerDict pid=716966)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/utils/__init__.py", line 3122, in run_method
+[36m(WorkerDict pid=716966)[0m     return func(*args, **kwargs)
+[36m(WorkerDict pid=716966)[0m            ^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 259, in init_device
+[36m(WorkerDict pid=716966)[0m     self.worker.init_device()  # type: ignore
+[36m(WorkerDict pid=716966)[0m     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 169, in init_device
+[36m(WorkerDict pid=716966)[0m     init_worker_distributed_environment(self.vllm_config, self.rank,
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 705, in init_worker_distributed_environment
+[36m(WorkerDict pid=716966)[0m     ensure_model_parallel_initialized(
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1228, in ensure_model_parallel_initialized
+[36m(WorkerDict pid=716966)[0m     initialize_model_parallel(tensor_model_parallel_size,
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1152, in initialize_model_parallel
+[36m(WorkerDict pid=716966)[0m     _TP = init_model_parallel_group(group_ranks,
+[36m(WorkerDict pid=716966)[0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 924, in init_model_parallel_group
+[36m(WorkerDict pid=716966)[0m     return GroupCoordinator(
+[36m(WorkerDict pid=716966)[0m            ^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 255, in __init__
+[36m(WorkerDict pid=716966)[0m     self.device_communicator = device_comm_cls(
+[36m(WorkerDict pid=716966)[0m                                ^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/cuda_communicator.py", line 68, in __init__
+[36m(WorkerDict pid=716966)[0m     self.symm_mem_comm = SymmMemCommunicator(
+[36m(WorkerDict pid=716966)[0m                          ^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/symm_mem.py", line 88, in __init__
+[36m(WorkerDict pid=716966)[0m     handle = torch_symm_mem.rendezvous(self.buffer, self.group.group_name)
+[36m(WorkerDict pid=716966)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716966)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/_symmetric_memory/__init__.py", line 1711, in rendezvous
+[36m(WorkerDict pid=716966)[0m     return _SymmetricMemory.rendezvous(tensor, group_name)
+[36m(WorkerDict pid=716966)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716966)[0m RuntimeError: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716965)[0m ERROR:2026-03-20 12:37:05,862:vLLMAsyncRollout _loop_forever error: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(WorkerDict pid=716965)[0m Traceback (most recent call last):
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 574, in _loop_forever
+[36m(WorkerDict pid=716965)[0m     result = await self._execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716965)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_rollout_spmd.py", line 611, in _execute_method
+[36m(WorkerDict pid=716965)[0m     return self.inference_engine.execute_method(method, *args, **kwargs)
+[36m(WorkerDict pid=716965)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 276, in execute_method
+[36m(WorkerDict pid=716965)[0m     raise e
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 267, in execute_method
+[36m(WorkerDict pid=716965)[0m     return run_method(self, method, args, kwargs)
+[36m(WorkerDict pid=716965)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/utils/__init__.py", line 3122, in run_method
+[36m(WorkerDict pid=716965)[0m     return func(*args, **kwargs)
+[36m(WorkerDict pid=716965)[0m            ^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/worker/worker_base.py", line 259, in init_device
+[36m(WorkerDict pid=716965)[0m     self.worker.init_device()  # type: ignore
+[36m(WorkerDict pid=716965)[0m     ^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 169, in init_device
+[36m(WorkerDict pid=716965)[0m     init_worker_distributed_environment(self.vllm_config, self.rank,
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/worker/gpu_worker.py", line 705, in init_worker_distributed_environment
+[36m(WorkerDict pid=716965)[0m     ensure_model_parallel_initialized(
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1228, in ensure_model_parallel_initialized
+[36m(WorkerDict pid=716965)[0m     initialize_model_parallel(tensor_model_parallel_size,
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 1152, in initialize_model_parallel
+[36m(WorkerDict pid=716965)[0m     _TP = init_model_parallel_group(group_ranks,
+[36m(WorkerDict pid=716965)[0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 924, in init_model_parallel_group
+[36m(WorkerDict pid=716965)[0m     return GroupCoordinator(
+[36m(WorkerDict pid=716965)[0m            ^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/parallel_state.py", line 255, in __init__
+[36m(WorkerDict pid=716965)[0m     self.device_communicator = device_comm_cls(
+[36m(WorkerDict pid=716965)[0m                                ^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/cuda_communicator.py", line 68, in __init__
+[36m(WorkerDict pid=716965)[0m     self.symm_mem_comm = SymmMemCommunicator(
+[36m(WorkerDict pid=716965)[0m                          ^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/distributed/device_communicators/symm_mem.py", line 88, in __init__
+[36m(WorkerDict pid=716965)[0m     handle = torch_symm_mem.rendezvous(self.buffer, self.group.group_name)
+[36m(WorkerDict pid=716965)[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716965)[0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/_symmetric_memory/__init__.py", line 1711, in rendezvous
+[36m(WorkerDict pid=716965)[0m     return _SymmetricMemory.rendezvous(tensor, group_name)
+[36m(WorkerDict pid=716965)[0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(WorkerDict pid=716965)[0m RuntimeError: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m Process EngineCore_DP0:
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m Process EngineCore_DP0:
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m Process EngineCore_DP0:
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m Process EngineCore_DP0:
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m Traceback (most recent call last):
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m     self.run()
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 108, in run
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m     self._target(*self._args, **self._kwargs)
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 712, in run_engine_core
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m     raise e
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 699, in run_engine_core
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 498, in __init__
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m     super().__init__(vllm_config, executor_class, log_stats,
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 83, in __init__
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m     self.model_executor = executor_class(vllm_config)
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/executor/executor_base.py", line 54, in __init__
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m     self._init_executor()
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_async_server.py", line 89, in _init_executor
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m     self.collective_rpc("init_device")
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_async_server.py", line 116, in collective_rpc
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m     raise output
+[36m(vLLMHttpServer pid=817211)[0m [1;36m(EngineCore_DP0 pid=833907)[0;0m RuntimeError: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m Traceback (most recent call last):
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m     self.run()
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 108, in run
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m     self._target(*self._args, **self._kwargs)
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 712, in run_engine_core
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m     raise e
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 699, in run_engine_core
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 498, in __init__
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m     super().__init__(vllm_config, executor_class, log_stats,
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 83, in __init__
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m     self.model_executor = executor_class(vllm_config)
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/executor/executor_base.py", line 54, in __init__
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m     self._init_executor()
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_async_server.py", line 89, in _init_executor
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m     self.collective_rpc("init_device")
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_async_server.py", line 116, in collective_rpc
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m     raise output
+[36m(vLLMHttpServer pid=817210)[0m [1;36m(EngineCore_DP0 pid=833899)[0;0m RuntimeError: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m Traceback (most recent call last):
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m     self.run()
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 108, in run
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m     self._target(*self._args, **self._kwargs)
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 712, in run_engine_core
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m     raise e
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 699, in run_engine_core
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 498, in __init__
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m     super().__init__(vllm_config, executor_class, log_stats,
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 83, in __init__
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m     self.model_executor = executor_class(vllm_config)
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/executor/executor_base.py", line 54, in __init__
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m     self._init_executor()
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_async_server.py", line 89, in _init_executor
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m     self.collective_rpc("init_device")
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_async_server.py", line 116, in collective_rpc
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m     raise output
+[36m(vLLMHttpServer pid=817206)[0m [1;36m(EngineCore_DP0 pid=833903)[0;0m RuntimeError: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m Traceback (most recent call last):
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m     self.run()
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 108, in run
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m     self._target(*self._args, **self._kwargs)
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 712, in run_engine_core
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m     raise e
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 699, in run_engine_core
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 498, in __init__
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m     super().__init__(vllm_config, executor_class, log_stats,
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 83, in __init__
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m     self.model_executor = executor_class(vllm_config)
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/executor/executor_base.py", line 54, in __init__
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m     self._init_executor()
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_async_server.py", line 89, in _init_executor
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m     self.collective_rpc("init_device")
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/workers/rollout/vllm_rollout/vllm_async_server.py", line 116, in collective_rpc
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m     raise output
+[36m(vLLMHttpServer pid=817208)[0m [1;36m(EngineCore_DP0 pid=833911)[0;0m RuntimeError: CUDASymmetricMemoryAllocator::rendezvous: detected allocations from overlapping devices from different ranks.
+*** SIGTERM received at time=1774010227 on cpu 161 ***
+PC: @     0x7f6bcd8fb117  (unknown)  (unknown)
+    @     0x7f6bcd8ac520  (unknown)  (unknown)
+[2026-03-20 12:37:07,243 E 696350 696350] logging.cc:474: *** SIGTERM received at time=1774010227 on cpu 161 ***
+[2026-03-20 12:37:07,243 E 696350 696350] logging.cc:474: PC: @     0x7f6bcd8fb117  (unknown)  (unknown)
+[2026-03-20 12:37:07,243 E 696350 696350] logging.cc:474:     @     0x7f6bcd8ac520  (unknown)  (unknown)

@@ -1,0 +1,379 @@
+INFO:     Started server process [1053875]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:38000 (Press CTRL+C to quit)
+2026-03-20 12:59:41,650	INFO worker.py:2004 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8266 [39m[22m
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/ray/_private/worker.py:2052: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/server/http_training_server.py:459: UserWarning: Disabled critic as algorithm.adv_estimator != gae. If it is not intended, please set critic.enable=True
+  if need_critic(config):
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/backend_patch/verl/trainer/ppo/ray_trainer.py:393: UserWarning: Disabled critic as algorithm.adv_estimator != gae. If it is not intended, please set critic.enable=True
+  self.use_critic = need_critic(self.config)
+[36m(WorkerDict pid=1072428)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072429)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072425)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072421)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072426)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072430)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072432)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072424)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072428)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072429)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072425)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072421)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072426)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072430)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072432)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072424)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1072428)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072429)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072425)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072426)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072424)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072421)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072430)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072432)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072428)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:16<01:06, 16.70s/it]
+[36m(WorkerDict pid=1072429)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:16<01:06, 16.70s/it]
+[36m(WorkerDict pid=1072425)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:16<01:06, 16.70s/it]
+[36m(WorkerDict pid=1072421)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:16<01:06, 16.69s/it]
+[36m(WorkerDict pid=1072426)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:16<01:06, 16.70s/it]
+[36m(WorkerDict pid=1072430)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:16<01:06, 16.68s/it]
+[36m(WorkerDict pid=1072432)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:16<01:06, 16.68s/it]
+[36m(WorkerDict pid=1072424)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:16<01:06, 16.70s/it]
+[36m(WorkerDict pid=1072428)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:34<00:52, 17.39s/it]
+[36m(WorkerDict pid=1072429)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:34<00:52, 17.39s/it]
+[36m(WorkerDict pid=1072425)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:34<00:52, 17.39s/it]
+[36m(WorkerDict pid=1072421)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:34<00:52, 17.39s/it]
+[36m(WorkerDict pid=1072426)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:34<00:52, 17.39s/it]
+[36m(WorkerDict pid=1072430)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:34<00:52, 17.38s/it]
+[36m(WorkerDict pid=1072432)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:34<00:52, 17.38s/it]
+[36m(WorkerDict pid=1072424)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:34<00:52, 17.39s/it]
+[36m(WorkerDict pid=1072428)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:52<00:34, 17.48s/it]
+[36m(WorkerDict pid=1072429)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:52<00:34, 17.48s/it]
+[36m(WorkerDict pid=1072425)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:52<00:34, 17.48s/it]
+[36m(WorkerDict pid=1072421)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:52<00:34, 17.48s/it]
+[36m(WorkerDict pid=1072426)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:52<00:34, 17.48s/it]
+[36m(WorkerDict pid=1072430)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:52<00:34, 17.47s/it]
+[36m(WorkerDict pid=1072432)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:52<00:34, 17.48s/it]
+[36m(WorkerDict pid=1072424)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:52<00:34, 17.48s/it]
+[36m(WorkerDict pid=1072428)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:06<00:16, 16.43s/it]
+[36m(WorkerDict pid=1072429)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:06<00:16, 16.43s/it]
+[36m(WorkerDict pid=1072425)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:06<00:16, 16.43s/it]
+[36m(WorkerDict pid=1072421)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:06<00:16, 16.43s/it]
+[36m(WorkerDict pid=1072426)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:06<00:16, 16.43s/it]
+[36m(WorkerDict pid=1072430)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:06<00:16, 16.42s/it]
+[36m(WorkerDict pid=1072432)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:06<00:16, 16.42s/it]
+[36m(WorkerDict pid=1072424)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:06<00:16, 16.43s/it]
+[36m(WorkerDict pid=1072421)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:12<00:00, 12.63s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:12<00:00, 14.57s/it]
+[36m(WorkerDict pid=1072428)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 12.70s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 14.61s/it]
+[36m(WorkerDict pid=1072430)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 12.70s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 14.61s/it]
+[36m(WorkerDict pid=1072424)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 12.70s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 14.61s/it]
+[36m(WorkerDict pid=1072429)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 12.71s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 14.62s/it]
+[36m(WorkerDict pid=1072425)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 12.71s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 14.62s/it]
+[36m(WorkerDict pid=1072426)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 12.71s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 14.62s/it]
+[36m(WorkerDict pid=1072432)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 12.71s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:13<00:00, 14.62s/it]
+[36m(WorkerDict pid=1072428)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072424)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072429)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072430)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072421)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072425)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072432)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072426)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1072421)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:05<00:23,  5.85s/it]
+[36m(WorkerDict pid=1072428)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.08s/it]
+[36m(WorkerDict pid=1072429)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.09s/it]
+[36m(WorkerDict pid=1072425)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.05s/it]
+[36m(WorkerDict pid=1072426)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.03s/it]
+[36m(WorkerDict pid=1072430)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.06s/it]
+[36m(WorkerDict pid=1072432)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.04s/it]
+[36m(WorkerDict pid=1072424)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.09s/it]
+[36m(WorkerDict pid=1072421)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:11<00:17,  5.86s/it]
+[36m(WorkerDict pid=1072428)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.01s/it]
+[36m(WorkerDict pid=1072429)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.00s/it]
+[36m(WorkerDict pid=1072425)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:11<00:17,  5.98s/it]
+[36m(WorkerDict pid=1072426)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:11<00:17,  5.97s/it]
+[36m(WorkerDict pid=1072430)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.00s/it]
+[36m(WorkerDict pid=1072432)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:11<00:17,  5.97s/it]
+[36m(WorkerDict pid=1072424)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.01s/it]
+[36m(WorkerDict pid=1072421)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:17<00:11,  5.87s/it]
+[36m(WorkerDict pid=1072428)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:17<00:11,  5.94s/it]
+[36m(WorkerDict pid=1072425)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:17<00:11,  5.92s/it]
+[36m(WorkerDict pid=1072426)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:17<00:11,  5.92s/it]
+[36m(WorkerDict pid=1072430)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:17<00:11,  5.93s/it]
+[36m(WorkerDict pid=1072432)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:17<00:11,  5.92s/it]
+[36m(WorkerDict pid=1072424)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:17<00:11,  5.94s/it]
+[36m(WorkerDict pid=1072429)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:17<00:11,  5.97s/it]
+[36m(WorkerDict pid=1072421)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:22<00:05,  5.37s/it]
+[36m(WorkerDict pid=1072432)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:22<00:05,  5.43s/it]
+[36m(WorkerDict pid=1072428)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:22<00:05,  5.46s/it]
+[36m(WorkerDict pid=1072429)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:22<00:05,  5.45s/it]
+[36m(WorkerDict pid=1072425)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:22<00:05,  5.45s/it]
+[36m(WorkerDict pid=1072426)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:22<00:05,  5.45s/it]
+[36m(WorkerDict pid=1072430)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:22<00:05,  5.46s/it]
+[36m(WorkerDict pid=1072424)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:22<00:05,  5.46s/it]
+[36m(WorkerDict pid=1072421)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:23<00:00,  4.04s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:23<00:00,  4.78s/it]
+[36m(WorkerDict pid=1072428)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.14s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.88s/it]
+[36m(WorkerDict pid=1072429)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.14s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.89s/it]
+[36m(WorkerDict pid=1072425)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.14s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.88s/it]
+[36m(WorkerDict pid=1072426)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.14s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.87s/it]
+[36m(WorkerDict pid=1072430)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.15s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.88s/it]
+[36m(WorkerDict pid=1072432)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.14s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.87s/it]
+[36m(WorkerDict pid=1072424)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.15s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:24<00:00,  4.89s/it]
+[36m(WorkerDict pid=1072428)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1072428)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1072429)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1072429)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1072425)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1072425)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1072426)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1072426)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1072430)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1072430)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1072432)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1072432)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1072424)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1072424)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1072421)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1072421)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1072425)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1072425)[0m   warnings.warn(
+[36m(WorkerDict pid=1072421)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1072421)[0m   warnings.warn(
+[36m(WorkerDict pid=1072430)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1072430)[0m   warnings.warn(
+[36m(WorkerDict pid=1072432)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1072432)[0m   warnings.warn(
+[36m(WorkerDict pid=1072424)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1072424)[0m   warnings.warn(
+[36m(WorkerDict pid=1072429)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1072429)[0m   warnings.warn(
+[36m(WorkerDict pid=1072426)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1072426)[0m   warnings.warn(
+[36m(WorkerDict pid=1072428)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1072428)[0m   warnings.warn(
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+  warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(vLLMHttpServer pid=1171161)[0m INFO:2026-03-20 13:04:43,160:vLLMHttpServer, replica_rank: 0, master address: 10.247.14.78, master port: 42397, data parallel master port: 36331
+[36m(vLLMHttpServer pid=1171163)[0m INFO:2026-03-20 13:04:43,163:vLLMHttpServer, replica_rank: 3, master address: 10.247.14.78, master port: 45295, data parallel master port: 43429
+[36m(vLLMHttpServer pid=1171162)[0m INFO:2026-03-20 13:04:43,158:vLLMHttpServer, replica_rank: 5, master address: 10.247.14.78, master port: 44807, data parallel master port: 46471
+[36m(vLLMHttpServer pid=1171159)[0m INFO:2026-03-20 13:04:43,165:vLLMHttpServer, replica_rank: 4, master address: 10.247.14.78, master port: 44209, data parallel master port: 39067
+[36m(vLLMHttpServer pid=1171160)[0m INFO:2026-03-20 13:04:43,159:vLLMHttpServer, replica_rank: 6, master address: 10.247.14.78, master port: 38657, data parallel master port: 38943
+[36m(vLLMHttpServer pid=1171164)[0m INFO:2026-03-20 13:04:43,165:vLLMHttpServer, replica_rank: 7, master address: 10.247.14.78, master port: 37935, data parallel master port: 37213
+[36m(vLLMHttpServer pid=1171166)[0m INFO:2026-03-20 13:04:43,164:vLLMHttpServer, replica_rank: 2, master address: 10.247.14.78, master port: 34965, data parallel master port: 35579
+[36m(vLLMHttpServer pid=1171165)[0m INFO:2026-03-20 13:04:43,167:vLLMHttpServer, replica_rank: 1, master address: 10.247.14.78, master port: 33085, data parallel master port: 35443
+[36m(vLLMHttpServer pid=1171165)[0m INFO:2026-03-20 13:04:43,171:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=1171161)[0m INFO:2026-03-20 13:04:43,168:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=1171163)[0m INFO:2026-03-20 13:04:43,168:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=1171162)[0m INFO:2026-03-20 13:04:43,167:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=1171159)[0m INFO:2026-03-20 13:04:43,170:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=1171160)[0m INFO:2026-03-20 13:04:43,167:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=1171164)[0m INFO:2026-03-20 13:04:43,170:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=1171166)[0m INFO:2026-03-20 13:04:43,169:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=1171165)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=1171165)[0m INFO:2026-03-20 13:04:43,193:replica_rank=1, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_1072424_root.ipc']
+[36m(vLLMHttpServer pid=1171161)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=1171161)[0m INFO:2026-03-20 13:04:43,193:replica_rank=0, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_1072421_root.ipc']
+[36m(vLLMHttpServer pid=1171163)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=1171163)[0m INFO:2026-03-20 13:04:43,193:replica_rank=3, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_1072432_root.ipc']
+[36m(vLLMHttpServer pid=1171162)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=1171162)[0m INFO:2026-03-20 13:04:43,195:replica_rank=5, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_1072430_root.ipc']
+[36m(vLLMHttpServer pid=1171159)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=1171159)[0m INFO:2026-03-20 13:04:43,193:replica_rank=4, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_1072429_root.ipc']
+[36m(vLLMHttpServer pid=1171160)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=1171160)[0m INFO:2026-03-20 13:04:43,193:replica_rank=6, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_1072426_root.ipc']
+[36m(vLLMHttpServer pid=1171164)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=1171164)[0m INFO:2026-03-20 13:04:43,193:replica_rank=7, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_1072428_root.ipc']
+[36m(vLLMHttpServer pid=1171166)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=1171166)[0m INFO:2026-03-20 13:04:43,193:replica_rank=2, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_1072425_root.ipc']
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m Process EngineCore_DP0:
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m Traceback (most recent call last):
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m     self.run()
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 108, in run
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m     self._target(*self._args, **self._kwargs)
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 712, in run_engine_core
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m     raise e
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 699, in run_engine_core
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 498, in __init__
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m     super().__init__(vllm_config, executor_class, log_stats,
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 92, in __init__
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m     self._initialize_kv_caches(vllm_config)
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 199, in _initialize_kv_caches
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m     kv_cache_configs = get_kv_cache_configs(vllm_config, kv_cache_specs,
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 1243, in get_kv_cache_configs
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m     check_enough_kv_cache_memory(vllm_config, kv_cache_spec_one_worker,
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 716, in check_enough_kv_cache_memory
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m     raise ValueError(
+[36m(vLLMHttpServer pid=1171165)[0m [1;36m(EngineCore_DP0 pid=1221836)[0;0m ValueError: To serve at least one request with the models's max seq len (6144), (0.84 GiB KV cache is needed, which is larger than the available KV cache memory (0.06 GiB). Based on the available memory, the estimated maximum model length is 416. Try increasing `gpu_memory_utilization` or decreasing `max_model_len` when initializing the engine.
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m Process EngineCore_DP0:
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m Traceback (most recent call last):
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m     self.run()
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 108, in run
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m     self._target(*self._args, **self._kwargs)
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 712, in run_engine_core
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m     raise e
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 699, in run_engine_core
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 498, in __init__
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m     super().__init__(vllm_config, executor_class, log_stats,
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 92, in __init__
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m     self._initialize_kv_caches(vllm_config)
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 199, in _initialize_kv_caches
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m     kv_cache_configs = get_kv_cache_configs(vllm_config, kv_cache_specs,
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 1243, in get_kv_cache_configs
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m     check_enough_kv_cache_memory(vllm_config, kv_cache_spec_one_worker,
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 716, in check_enough_kv_cache_memory
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m     raise ValueError(
+[36m(vLLMHttpServer pid=1171161)[0m [1;36m(EngineCore_DP0 pid=1221849)[0;0m ValueError: To serve at least one request with the models's max seq len (6144), (0.84 GiB KV cache is needed, which is larger than the available KV cache memory (0.06 GiB). Based on the available memory, the estimated maximum model length is 416. Try increasing `gpu_memory_utilization` or decreasing `max_model_len` when initializing the engine.
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m Process EngineCore_DP0:
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m Traceback (most recent call last):
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m     self.run()
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 108, in run
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m     self._target(*self._args, **self._kwargs)
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 712, in run_engine_core
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m     raise e
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 699, in run_engine_core
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 498, in __init__
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m     super().__init__(vllm_config, executor_class, log_stats,
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 92, in __init__
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m     self._initialize_kv_caches(vllm_config)
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 199, in _initialize_kv_caches
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m     kv_cache_configs = get_kv_cache_configs(vllm_config, kv_cache_specs,
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 1243, in get_kv_cache_configs
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m     check_enough_kv_cache_memory(vllm_config, kv_cache_spec_one_worker,
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 716, in check_enough_kv_cache_memory
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m     raise ValueError(
+[36m(vLLMHttpServer pid=1171163)[0m [1;36m(EngineCore_DP0 pid=1221854)[0;0m ValueError: To serve at least one request with the models's max seq len (6144), (0.84 GiB KV cache is needed, which is larger than the available KV cache memory (0.06 GiB). Based on the available memory, the estimated maximum model length is 416. Try increasing `gpu_memory_utilization` or decreasing `max_model_len` when initializing the engine.
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m Process EngineCore_DP0:
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m Traceback (most recent call last):
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m     self.run()
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 108, in run
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m     self._target(*self._args, **self._kwargs)
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 712, in run_engine_core
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m     raise e
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 699, in run_engine_core
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 498, in __init__
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m     super().__init__(vllm_config, executor_class, log_stats,
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 92, in __init__
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m     self._initialize_kv_caches(vllm_config)
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 199, in _initialize_kv_caches
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m     kv_cache_configs = get_kv_cache_configs(vllm_config, kv_cache_specs,
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 1243, in get_kv_cache_configs
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m     check_enough_kv_cache_memory(vllm_config, kv_cache_spec_one_worker,
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 716, in check_enough_kv_cache_memory
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m     raise ValueError(
+[36m(vLLMHttpServer pid=1171162)[0m [1;36m(EngineCore_DP0 pid=1221811)[0;0m ValueError: To serve at least one request with the models's max seq len (6144), (0.84 GiB KV cache is needed, which is larger than the available KV cache memory (0.06 GiB). Based on the available memory, the estimated maximum model length is 416. Try increasing `gpu_memory_utilization` or decreasing `max_model_len` when initializing the engine.
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m Process EngineCore_DP0:
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m Traceback (most recent call last):
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m     self.run()
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 108, in run
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m     self._target(*self._args, **self._kwargs)
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 712, in run_engine_core
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m     raise e
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 699, in run_engine_core
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 498, in __init__
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m     super().__init__(vllm_config, executor_class, log_stats,
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 92, in __init__
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m     self._initialize_kv_caches(vllm_config)
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 199, in _initialize_kv_caches
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m     kv_cache_configs = get_kv_cache_configs(vllm_config, kv_cache_specs,
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 1243, in get_kv_cache_configs
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m     check_enough_kv_cache_memory(vllm_config, kv_cache_spec_one_worker,
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 716, in check_enough_kv_cache_memory
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m     raise ValueError(
+[36m(vLLMHttpServer pid=1171159)[0m [1;36m(EngineCore_DP0 pid=1221850)[0;0m ValueError: To serve at least one request with the models's max seq len (6144), (0.84 GiB KV cache is needed, which is larger than the available KV cache memory (0.06 GiB). Based on the available memory, the estimated maximum model length is 416. Try increasing `gpu_memory_utilization` or decreasing `max_model_len` when initializing the engine.
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m Process EngineCore_DP0:
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m Traceback (most recent call last):
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m     self.run()
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 108, in run
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m     self._target(*self._args, **self._kwargs)
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 712, in run_engine_core
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m     raise e
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 699, in run_engine_core
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 498, in __init__
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m     super().__init__(vllm_config, executor_class, log_stats,
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 92, in __init__
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m     self._initialize_kv_caches(vllm_config)
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 199, in _initialize_kv_caches
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m     kv_cache_configs = get_kv_cache_configs(vllm_config, kv_cache_specs,
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 1243, in get_kv_cache_configs
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m     check_enough_kv_cache_memory(vllm_config, kv_cache_spec_one_worker,
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 716, in check_enough_kv_cache_memory
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m     raise ValueError(
+[36m(vLLMHttpServer pid=1171160)[0m [1;36m(EngineCore_DP0 pid=1221846)[0;0m ValueError: To serve at least one request with the models's max seq len (6144), (0.84 GiB KV cache is needed, which is larger than the available KV cache memory (0.06 GiB). Based on the available memory, the estimated maximum model length is 416. Try increasing `gpu_memory_utilization` or decreasing `max_model_len` when initializing the engine.
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m Process EngineCore_DP0:
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m Traceback (most recent call last):
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m     self.run()
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 108, in run
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m     self._target(*self._args, **self._kwargs)
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 712, in run_engine_core
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m     raise e
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 699, in run_engine_core
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 498, in __init__
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m     super().__init__(vllm_config, executor_class, log_stats,
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 92, in __init__
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m     self._initialize_kv_caches(vllm_config)
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 199, in _initialize_kv_caches
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m     kv_cache_configs = get_kv_cache_configs(vllm_config, kv_cache_specs,
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 1243, in get_kv_cache_configs
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m     check_enough_kv_cache_memory(vllm_config, kv_cache_spec_one_worker,
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 716, in check_enough_kv_cache_memory
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m     raise ValueError(
+[36m(vLLMHttpServer pid=1171166)[0m [1;36m(EngineCore_DP0 pid=1221838)[0;0m ValueError: To serve at least one request with the models's max seq len (6144), (0.84 GiB KV cache is needed, which is larger than the available KV cache memory (0.06 GiB). Based on the available memory, the estimated maximum model length is 416. Try increasing `gpu_memory_utilization` or decreasing `max_model_len` when initializing the engine.
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m Process EngineCore_DP0:
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m Traceback (most recent call last):
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m     self.run()
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/multiprocessing/process.py", line 108, in run
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m     self._target(*self._args, **self._kwargs)
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 712, in run_engine_core
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m     raise e
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 699, in run_engine_core
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m     engine_core = EngineCoreProc(*args, **kwargs)
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 498, in __init__
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m     super().__init__(vllm_config, executor_class, log_stats,
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 92, in __init__
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m     self._initialize_kv_caches(vllm_config)
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/engine/core.py", line 199, in _initialize_kv_caches
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m     kv_cache_configs = get_kv_cache_configs(vllm_config, kv_cache_specs,
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 1243, in get_kv_cache_configs
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m     check_enough_kv_cache_memory(vllm_config, kv_cache_spec_one_worker,
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m   File "/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/vllm/v1/core/kv_cache_utils.py", line 716, in check_enough_kv_cache_memory
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m     raise ValueError(
+[36m(vLLMHttpServer pid=1171164)[0m [1;36m(EngineCore_DP0 pid=1221833)[0;0m ValueError: To serve at least one request with the models's max seq len (6144), (0.84 GiB KV cache is needed, which is larger than the available KV cache memory (0.06 GiB). Based on the available memory, the estimated maximum model length is 416. Try increasing `gpu_memory_utilization` or decreasing `max_model_len` when initializing the engine.
+*** SIGTERM received at time=1774011958 on cpu 64 ***
+PC: @     0x7f8b07620117  (unknown)  (unknown)
+    @     0x7f8b075d1520  (unknown)  (unknown)
+[2026-03-20 13:05:58,303 E 1053875 1053875] logging.cc:474: *** SIGTERM received at time=1774011958 on cpu 64 ***
+[2026-03-20 13:05:58,303 E 1053875 1053875] logging.cc:474: PC: @     0x7f8b07620117  (unknown)  (unknown)
+[2026-03-20 13:05:58,303 E 1053875 1053875] logging.cc:474:     @     0x7f8b075d1520  (unknown)  (unknown)

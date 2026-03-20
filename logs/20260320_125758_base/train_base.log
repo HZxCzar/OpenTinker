@@ -1,0 +1,58 @@
+INFO 03-20 12:59:11 [__init__.py:216] Automatically detected platform cuda.
+============================================================
+Training with ScienceWorld Environment
+============================================================
+
+Connecting to scheduler at http://127.0.0.1:8780
+No API key provided - authentication may fail if scheduler requires it
+[2026-03-20 12:59:20,071][utils.http_training_client][INFO] - SchedulerClient initialized for scheduler: http://127.0.0.1:8780
+
+Submitting training job to scheduler...
+[2026-03-20 12:59:20,073][utils.http_training_client][INFO] - Submitting job to scheduler...
+[2026-03-20 12:59:29,767][utils.http_training_client][INFO] - Job submitted: d8a06a7f, status: RUNNING
+[2026-03-20 12:59:29,767][utils.http_training_client][INFO] - Job d8a06a7f started immediately on http://10.247.14.78:38000
+
+Job d8a06a7f allocated!
+  Server URL: http://10.247.14.78:38000
+  GPUs: None
+  Port: None
+============================================================
+
+Setting up GameEnvironment with SciWorldGame...
+  Environment endpoint: http://127.0.0.1:8092
+  Max steps: 30
+  Split: train
+  Job ID for stats: d8a06a7f
+Loading tokenizer from /inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218
+Creating training dataset (virtual_size=4000)
+[2026-03-20 12:59:30,253][opentinker.environment.base_data_generator][INFO] - DynamicGameDataset initialized: virtual_size=4000
+Creating training DataLoader (batch_size=4)
+Training dataloader: 1000 batches
+[2026-03-20 12:59:30,254][opentinker.environment.base_data_generator][INFO] - DynamicGameDataset initialized: virtual_size=32, seed=42
+Validation dataloader: 1 batches
+Generated interaction config: /tmp/sciworld_interaction_config_f1jcnub3.yaml
+Environment created
+  Interaction config path: /tmp/sciworld_interaction_config_f1jcnub3.yaml
+Connected to ScienceWorld server for metrics at http://127.0.0.1:8092
+
+Connecting to allocated server at http://10.247.14.78:38000
+[2026-03-20 12:59:30,264][utils.http_training_client][INFO] - HTTP Training Client initialized for server: http://10.247.14.78:38000
+[2026-03-20 12:59:30,264][utils.http_training_client][INFO] - Initialized tracking with backends: ['console']
+[ServiceClient] Passing multi_turn config to server: {'max_user_turns': 30, 'max_assistant_turns': 30, 'max_tokens_per_turn': 512, 'weave_project': 'opentinker/sciworld', 'experiment_name': 'sciworld_interaction'}
+[2026-03-20 12:59:30,268][utils.http_training_client][INFO] - Setting generation config: {'temperature': 1, 'top_p': 1, 'max_new_tokens': 4096}
+Environment config: {'actor_rollout_ref': {'rollout': {'multi_turn': {'interaction_config_path': '/tmp/sciworld_interaction_config_f1jcnub3.yaml', 'interaction_config_content': "interaction:\n- class_name: opentinker.environment.gym_environment_interaction.GymEnvironmentInteraction\n  config:\n    env_endpoint: http://127.0.0.1:8092\n    env_host: 127.0.0.1\n    env_port: 8092\n    env_shards: 8\n    jar_path: null\n    job_id: d8a06a7f\n    local_thread_base: 20000\n    max_steps: 30\n    max_total_steps: 30\n    observation_template: '{observation}'\n    simplification_str: ''\n    split: train\n    task_ids: null\n    task_names: null\n    variation_indices: null\n  name: sciworld\n"}, 'agent': {'default_agent_loop': 'generic_agent'}}}}
+[2026-03-20 12:59:30,273][utils.http_training_client][INFO] - Setting config: {'data': {'max_prompt_length': 2048, 'max_response_length': 4096}, 'actor_rollout_ref': {'model': {'path': '/inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218'}, 'rollout': {'tensor_model_parallel_size': 1, 'multi_turn': {'max_user_turns': 30, 'max_assistant_turns': 30, 'max_tokens_per_turn': 512, 'weave_project': 'opentinker/sciworld', 'experiment_name': 'sciworld_interaction'}}}, 'critic': {'model': {'path': '/inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218'}}, 'trainer': {'n_gpus_per_node': 8, 'project_name': 'co-evolve', 'experiment_name': 'sciworld_training'}}
+
+Starting training for 1000 steps...
+Checkpoint save frequency: 200
+Validation frequency: 50
+============================================================
+[2026-03-20 12:59:30,309][utils.http_training_client][INFO] - Server health: {'status': 'healthy', 'server': 'ppo_training'}
+[2026-03-20 12:59:30,309][utils.http_training_client][INFO] - Training for 1000 steps (max 1 epochs, 1000 steps per epoch)
+[2026-03-20 12:59:30,309][utils.http_training_client][INFO] - Initializing workers on server (this may take several minutes)...
+[2026-03-20 13:05:58,225][utils.http_training_client][ERROR] - HTTP error for init_workers: 500 Server Error: Internal Server Error for url: http://10.247.14.78:38000/api/v1/init_workers
+Removed: /tmp/sciworld_interaction_config_f1jcnub3.yaml
+
+🧹 Cleaning up job d8a06a7f...
+[2026-03-20 13:05:58,292][utils.http_training_client][INFO] - Cancelling job d8a06a7f...
+✓ Job d8a06a7f cancelled: Job cancelled successfully

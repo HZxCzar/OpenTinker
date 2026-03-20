@@ -135,3 +135,5 @@ outputs
 # wxxu dev
 !logs/
 !logs/**
+!scheduler_logs/
+!scheduler_logs/**
