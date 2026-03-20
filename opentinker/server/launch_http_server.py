@@ -14,6 +14,10 @@ import os
 def main(cfg):
     os.environ["WANDB_API_KEY"] = cfg.wandb_key
     os.environ["NCCL_P2P_DISABLE"] = str(cfg.nccl_p2p_disable)
+    # vLLM TP on recent stacks can trip over symmetric-memory allreduce in SPMD mode.
+    # Keep this aligned with verl's PPO runtime defaults.
+    os.environ.setdefault("VLLM_ALLREDUCE_USE_SYMM_MEM", "0")
+    os.environ.setdefault("NCCL_CUMEM_ENABLE", "0")
 
     # Only set XFORMERS if not using agent_loop (V1 is incompatible with XFORMERS)
     """在server3上禁用xformers"""

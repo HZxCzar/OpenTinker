@@ -2140,6 +2140,7 @@ def launch_server(
                 ignore_reinit_error=True,
                 runtime_env={
                     "env_vars": {
+                        "VLLM_ALLREDUCE_USE_SYMM_MEM": "0",
                         "NCCL_CUMEM_ENABLE": "0",
                         "VLLM_DISABLE_SLEEP_MODE": "1",
                         "RAY_memory_usage_threshold": "0.99",
@@ -2156,6 +2157,7 @@ def launch_server(
                 ignore_reinit_error=True,
                 runtime_env={
                     "env_vars": {
+                        "VLLM_ALLREDUCE_USE_SYMM_MEM": "0",
                         "NCCL_CUMEM_ENABLE": "0",
                         "VLLM_DISABLE_SLEEP_MODE": "1",
                         "RAY_memory_usage_threshold": "0.99",
