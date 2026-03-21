@@ -1,0 +1,260 @@
+INFO:     Started server process [1689188]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:38001 (Press CTRL+C to quit)
+2026-03-21 10:18:15,882	INFO worker.py:2004 -- Started a local Ray instance. View the dashboard at [1m[32mhttp://127.0.0.1:8266 [39m[22m
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/ray/_private/worker.py:2052: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/server/http_training_server.py:459: UserWarning: Disabled critic as algorithm.adv_estimator != gae. If it is not intended, please set critic.enable=True
+  if need_critic(config):
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/backend_patch/verl/trainer/ppo/ray_trainer.py:393: UserWarning: Disabled critic as algorithm.adv_estimator != gae. If it is not intended, please set critic.enable=True
+  self.use_critic = need_critic(self.config)
+[36m(WorkerDict pid=1711731)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711712)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711720)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711739)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711724)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711692)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711743)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711702)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711731)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711731)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711712)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711712)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711720)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711720)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711739)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711739)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711724)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711724)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711692)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711692)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711743)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711743)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711702)[0m Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen3Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[36m(WorkerDict pid=1711702)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711731)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:15<01:03, 15.95s/it]
+[36m(WorkerDict pid=1711712)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:15<01:03, 15.95s/it]
+[36m(WorkerDict pid=1711720)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:15<01:03, 15.95s/it]
+[36m(WorkerDict pid=1711739)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:15<01:03, 15.95s/it]
+[36m(WorkerDict pid=1711724)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:15<01:03, 15.95s/it]
+[36m(WorkerDict pid=1711692)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:15<01:03, 15.94s/it]
+[36m(WorkerDict pid=1711743)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:15<01:03, 15.95s/it]
+[36m(WorkerDict pid=1711702)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:15<01:03, 15.95s/it]
+[36m(WorkerDict pid=1711731)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:33<00:50, 16.78s/it]
+[36m(WorkerDict pid=1711712)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:33<00:50, 16.79s/it]
+[36m(WorkerDict pid=1711720)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:33<00:50, 16.79s/it]
+[36m(WorkerDict pid=1711739)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:33<00:50, 16.79s/it]
+[36m(WorkerDict pid=1711724)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:33<00:50, 16.79s/it]
+[36m(WorkerDict pid=1711692)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:33<00:50, 16.79s/it]
+[36m(WorkerDict pid=1711743)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:33<00:50, 16.79s/it]
+[36m(WorkerDict pid=1711702)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:33<00:50, 16.79s/it]
+[36m(WorkerDict pid=1711731)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:50<00:34, 17.05s/it]
+[36m(WorkerDict pid=1711712)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:50<00:34, 17.05s/it]
+[36m(WorkerDict pid=1711720)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:50<00:34, 17.05s/it]
+[36m(WorkerDict pid=1711739)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:50<00:34, 17.05s/it]
+[36m(WorkerDict pid=1711724)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:50<00:34, 17.05s/it]
+[36m(WorkerDict pid=1711692)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:50<00:34, 17.05s/it]
+[36m(WorkerDict pid=1711743)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:50<00:34, 17.05s/it]
+[36m(WorkerDict pid=1711702)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:50<00:34, 17.05s/it]
+[36m(WorkerDict pid=1711731)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:04<00:15, 15.90s/it]
+[36m(WorkerDict pid=1711712)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:04<00:15, 15.90s/it]
+[36m(WorkerDict pid=1711720)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:04<00:15, 15.90s/it]
+[36m(WorkerDict pid=1711739)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:04<00:15, 15.90s/it]
+[36m(WorkerDict pid=1711724)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:04<00:15, 15.90s/it]
+[36m(WorkerDict pid=1711692)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:04<00:15, 15.90s/it]
+[36m(WorkerDict pid=1711743)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:04<00:15, 15.90s/it]
+[36m(WorkerDict pid=1711702)[0m Loading checkpoint shards:  80%|████████  | 4/5 [01:04<00:15, 15.90s/it]
+[36m(WorkerDict pid=1711692)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 12.25s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 14.12s/it]
+[36m(WorkerDict pid=1711712)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 12.32s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 14.16s/it]
+[36m(WorkerDict pid=1711743)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 12.32s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 14.16s/it]
+[36m(WorkerDict pid=1711731)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 12.33s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 14.17s/it]
+[36m(WorkerDict pid=1711720)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 12.33s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 14.17s/it]
+[36m(WorkerDict pid=1711739)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 12.34s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 14.17s/it]
+[36m(WorkerDict pid=1711724)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 12.33s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 14.17s/it]
+[36m(WorkerDict pid=1711702)[0m Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 12.34s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:10<00:00, 14.17s/it]
+[36m(WorkerDict pid=1711731)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711712)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711739)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711724)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711692)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711743)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711702)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711720)[0m Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711724)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.12s/it]
+[36m(WorkerDict pid=1711692)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.14s/it]
+[36m(WorkerDict pid=1711702)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.12s/it]
+[36m(WorkerDict pid=1711731)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.22s/it]
+[36m(WorkerDict pid=1711712)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:24,  6.15s/it]
+[36m(WorkerDict pid=1711739)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:25,  6.25s/it]
+[36m(WorkerDict pid=1711743)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:25,  6.33s/it]
+[36m(WorkerDict pid=1711720)[0m Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:25,  6.45s/it]
+[36m(WorkerDict pid=1711731)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.11s/it]
+[36m(WorkerDict pid=1711739)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.09s/it]
+[36m(WorkerDict pid=1711724)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.13s/it]
+[36m(WorkerDict pid=1711692)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.14s/it]
+[36m(WorkerDict pid=1711702)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.13s/it]
+[36m(WorkerDict pid=1711712)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.21s/it]
+[36m(WorkerDict pid=1711743)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.31s/it]
+[36m(WorkerDict pid=1711720)[0m Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:18,  6.28s/it]
+[36m(WorkerDict pid=1711731)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.11s/it]
+[36m(WorkerDict pid=1711739)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.09s/it]
+[36m(WorkerDict pid=1711724)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.12s/it]
+[36m(WorkerDict pid=1711692)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.12s/it]
+[36m(WorkerDict pid=1711702)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.12s/it]
+[36m(WorkerDict pid=1711712)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.19s/it]
+[36m(WorkerDict pid=1711743)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.25s/it]
+[36m(WorkerDict pid=1711720)[0m Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:12,  6.23s/it]
+[36m(WorkerDict pid=1711731)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.65s/it]
+[36m(WorkerDict pid=1711739)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.64s/it]
+[36m(WorkerDict pid=1711724)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.65s/it]
+[36m(WorkerDict pid=1711702)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.65s/it]
+[36m(WorkerDict pid=1711692)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.68s/it]
+[36m(WorkerDict pid=1711712)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.69s/it]
+[36m(WorkerDict pid=1711743)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.73s/it]
+[36m(WorkerDict pid=1711720)[0m Loading checkpoint shards:  80%|████████  | 4/5 [00:23<00:05,  5.74s/it]
+[36m(WorkerDict pid=1711692)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  4.27s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  5.03s/it]
+[36m(WorkerDict pid=1711731)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  4.32s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  5.05s/it]
+[36m(WorkerDict pid=1711739)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  4.31s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  5.05s/it]
+[36m(WorkerDict pid=1711724)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  4.32s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  5.05s/it]
+[36m(WorkerDict pid=1711702)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  4.32s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  5.05s/it]
+[36m(WorkerDict pid=1711712)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  4.32s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  5.08s/it]
+[36m(WorkerDict pid=1711743)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  4.34s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  5.12s/it]
+[36m(WorkerDict pid=1711720)[0m Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  4.37s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:25<00:00,  5.14s/it]
+[36m(WorkerDict pid=1711731)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1711731)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1711720)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1711720)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1711739)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1711739)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1711724)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1711724)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1711743)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1711743)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1711702)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1711702)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1711712)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1711712)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1711692)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+[36m(WorkerDict pid=1711692)[0m   warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(WorkerDict pid=1711743)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1711743)[0m   warnings.warn(
+[36m(WorkerDict pid=1711731)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1711731)[0m   warnings.warn(
+[36m(WorkerDict pid=1711720)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1711720)[0m   warnings.warn(
+[36m(WorkerDict pid=1711739)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1711739)[0m   warnings.warn(
+[36m(WorkerDict pid=1711724)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1711724)[0m   warnings.warn(
+[36m(WorkerDict pid=1711692)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1711692)[0m   warnings.warn(
+[36m(WorkerDict pid=1711702)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1711702)[0m   warnings.warn(
+[36m(WorkerDict pid=1711712)[0m /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py:678: FutureWarning: FSDP.state_dict_type() and FSDP.set_state_dict_type() are being deprecated. Please use APIs, get_state_dict() and set_state_dict(), which can support different parallelisms, FSDP1, FSDP2, DDP. API doc: https://pytorch.org/docs/stable/distributed.checkpoint.html#torch.distributed.checkpoint.state_dict.get_state_dict .Tutorial: https://pytorch.org/tutorials/recipes/distributed_checkpoint_recipe.html .
+[36m(WorkerDict pid=1711712)[0m   warnings.warn(
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/verl/verl/utils/profiler/config.py:49: UserWarning: Torch profiler tool config is not fully supported now.
+  warnings.warn("Torch profiler tool config is not fully supported now.", stacklevel=1)
+[36m(vLLMHttpServer pid=1800683)[0m INFO:2026-03-21 10:21:56,755:vLLMHttpServer, replica_rank: 0, master address: 10.247.6.87, master port: 33865, data parallel master port: 39351
+[36m(vLLMHttpServer pid=1800683)[0m INFO:2026-03-21 10:21:56,758:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=1800739)[0m INFO:2026-03-21 10:21:56,746:vLLMHttpServer, replica_rank: 1, master address: 10.247.6.87, master port: 43589, data parallel master port: 35497
+[36m(vLLMHttpServer pid=1800739)[0m INFO:2026-03-21 10:21:56,749:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=1800739)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=1800739)[0m INFO:2026-03-21 10:21:56,770:replica_rank=1, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_1711712_root.ipc', 'ipc:///tmp/verl_vllm_zmq_1711720_root.ipc']
+[36m(vLLMHttpServer pid=1800665)[0m INFO:2026-03-21 10:21:56,760:vLLMHttpServer, replica_rank: 2, master address: 10.247.6.87, master port: 38885, data parallel master port: 34075
+[36m(vLLMHttpServer pid=1800665)[0m INFO:2026-03-21 10:21:56,763:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=1800646)[0m INFO:2026-03-21 10:21:56,741:vLLMHttpServer, replica_rank: 3, master address: 10.247.6.87, master port: 40911, data parallel master port: 32853
+[36m(vLLMHttpServer pid=1800646)[0m INFO:2026-03-21 10:21:56,746:override_generation_config: {'temperature': 1.0, 'top_k': -1, 'top_p': 1, 'repetition_penalty': 1.0, 'max_new_tokens': 4096}
+[36m(vLLMHttpServer pid=1800646)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=1800646)[0m INFO:2026-03-21 10:21:56,770:replica_rank=3, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_1711739_root.ipc', 'ipc:///tmp/verl_vllm_zmq_1711743_root.ipc']
+[36m(vLLMHttpServer pid=1800683)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=1800683)[0m INFO:2026-03-21 10:21:56,779:replica_rank=0, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_1711692_root.ipc', 'ipc:///tmp/verl_vllm_zmq_1711702_root.ipc']
+[36m(vLLMHttpServer pid=1800665)[0m Using blocking ray.get inside async actor. This blocks the event loop. Please use `await` on object ref with asyncio.gather if you want to yield execution to the event loop instead.
+[36m(vLLMHttpServer pid=1800665)[0m INFO:2026-03-21 10:21:56,784:replica_rank=2, node_rank=0, nnodes=1, get worker zmq addresses: ['ipc:///tmp/verl_vllm_zmq_1711724_root.ipc', 'ipc:///tmp/verl_vllm_zmq_1711731_root.ipc']
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/67 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   1%|▏         | 1/67 [00:00<00:12,  5.47it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   4%|▍         | 3/67 [00:00<00:06, 10.50it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   7%|▋         | 5/67 [00:00<00:04, 12.52it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  10%|█         | 7/67 [00:00<00:04, 13.49it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  13%|█▎        | 9/67 [00:00<00:04, 13.55it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  16%|█▋        | 11/67 [00:00<00:03, 14.03it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  19%|█▉        | 13/67 [00:00<00:03, 14.23it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  22%|██▏       | 15/67 [00:01<00:03, 14.31it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  25%|██▌       | 17/67 [00:01<00:03, 14.68it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  28%|██▊       | 19/67 [00:01<00:03, 15.04it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  31%|███▏      | 21/67 [00:01<00:03, 15.15it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  34%|███▍      | 23/67 [00:01<00:02, 14.97it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  37%|███▋      | 25/67 [00:01<00:02, 14.15it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  40%|████      | 27/67 [00:01<00:02, 14.18it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  43%|████▎     | 29/67 [00:02<00:02, 14.36it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  46%|████▋     | 31/67 [00:02<00:02, 14.16it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  49%|████▉     | 33/67 [00:02<00:02, 14.00it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  52%|█████▏    | 35/67 [00:02<00:02, 13.92it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  55%|█████▌    | 37/67 [00:02<00:02, 13.73it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  58%|█████▊    | 39/67 [00:02<00:02, 13.63it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  61%|██████    | 41/67 [00:02<00:01, 13.34it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  64%|██████▍   | 43/67 [00:03<00:01, 13.14it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  67%|██████▋   | 45/67 [00:03<00:01, 12.83it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  70%|███████   | 47/67 [00:03<00:02,  7.94it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  73%|███████▎  | 49/67 [00:03<00:02,  8.97it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  76%|███████▌  | 51/67 [00:04<00:01,  9.83it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  79%|███████▉  | 53/67 [00:04<00:01, 10.49it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  82%|████████▏ | 55/67 [00:04<00:01, 11.02it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  85%|████████▌ | 57/67 [00:04<00:00, 11.42it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  88%|████████▊ | 59/67 [00:04<00:00, 11.59it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  91%|█████████ | 61/67 [00:04<00:00, 11.72it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  94%|█████████▍| 63/67 [00:05<00:00, 11.69it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  97%|█████████▋| 65/67 [00:05<00:00, 11.51it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 67/67 [00:05<00:00, 11.71it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 67/67 [00:05<00:00, 12.36it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):   0%|          | 0/67 [00:00<?, ?it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):   3%|▎         | 2/67 [00:00<00:04, 15.77it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):   6%|▌         | 4/67 [00:00<00:03, 17.28it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):   9%|▉         | 6/67 [00:00<00:03, 17.83it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  12%|█▏        | 8/67 [00:00<00:03, 17.96it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  15%|█▍        | 10/67 [00:00<00:03, 17.94it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  18%|█▊        | 12/67 [00:00<00:02, 18.40it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  21%|██        | 14/67 [00:00<00:02, 18.49it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  24%|██▍       | 16/67 [00:00<00:02, 18.93it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  28%|██▊       | 19/67 [00:01<00:02, 19.35it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  31%|███▏      | 21/67 [00:01<00:02, 19.35it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  36%|███▌      | 24/67 [00:01<00:02, 19.37it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  39%|███▉      | 26/67 [00:01<00:02, 19.39it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  43%|████▎     | 29/67 [00:01<00:01, 19.60it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  46%|████▋     | 31/67 [00:01<00:01, 19.66it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  49%|████▉     | 33/67 [00:01<00:01, 19.74it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  52%|█████▏    | 35/67 [00:01<00:01, 19.37it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  55%|█████▌    | 37/67 [00:01<00:01, 19.40it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  58%|█████▊    | 39/67 [00:02<00:01, 19.52it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  61%|██████    | 41/67 [00:02<00:01, 18.60it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  64%|██████▍   | 43/67 [00:02<00:01, 18.93it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  67%|██████▋   | 45/67 [00:02<00:01, 18.95it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  70%|███████   | 47/67 [00:02<00:01, 18.71it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  73%|███████▎  | 49/67 [00:02<00:00, 19.05it/s]Capturing CUDA graphs (decode, FULL):  76%|███████▌  | 51/67 [00:02<00:00, 19.29it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  79%|███████▉  | 53/67 [00:02<00:00, 19.35it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  82%|████████▏ | 55/67 [00:02<00:00, 19.44it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  85%|████████▌ | 57/67 [00:02<00:00, 19.41it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  88%|████████▊ | 59/67 [00:03<00:00, 19.54it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  91%|█████████ | 61/67 [00:03<00:00, 19.52it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  94%|█████████▍| 63/67 [00:03<00:00, 19.42it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL):  97%|█████████▋| 65/67 [00:03<00:00, 19.52it/s]
+[36m(WorkerDict pid=1711692)[0m Capturing CUDA graphs (decode, FULL): 100%|██████████| 67/67 [00:03<00:00, 19.13it/s]
+[36m(vLLMHttpServer pid=1800683)[0m INFO:2026-03-21 10:22:38,265:Initializing a V1 LLM engine with config: model='/inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218', speculative_config=None, tokenizer='/inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=6144, download_dir=None, load_format=dummy, tensor_parallel_size=2, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=True, quantization=None, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=/inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218, enable_prefix_caching=True, chunked_prefill_enabled=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output","vllm.mamba_mixer2","vllm.mamba_mixer","vllm.short_conv","vllm.linear_attention","vllm.plamo2_mamba_mixer","vllm.gdn_attention","vllm.sparse_attn_indexer"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"cudagraph_mode":[2,1],"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"use_inductor_graph_partition":false,"pass_config":{},"max_capture_size":512,"local_cache_dir":null}
+[36m(PerTurnAgentLoopWorker pid=1834810)[0m You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+[36m(PerTurnAgentLoopWorker pid=1834817)[0m You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+[36m(PerTurnAgentLoopWorker pid=1834826)[0m You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+[36m(PerTurnAgentLoopWorker pid=1834818)[0m You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+[33m(raylet)[0m [2026-03-21 12:07:38,020 E 1695606 1695606] (raylet) node_manager.cc:3250: 1 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 1e4b732f51576f40a4e9e31bf39d17b8c599154429b8d7d55b297cc5, IP: 10.247.6.87) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.247.6.87`
+[33m(raylet)[0m 
+[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[33m(raylet)[0m [2026-03-21 12:09:05,386 E 1695606 1695606] (raylet) node_manager.cc:3250: 3 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 1e4b732f51576f40a4e9e31bf39d17b8c599154429b8d7d55b297cc5, IP: 10.247.6.87) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.247.6.87`
+[33m(raylet)[0m 
+[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[33m(raylet)[0m [2026-03-21 12:10:05,399 E 1695606 1695606] (raylet) node_manager.cc:3250: 2 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: 1e4b732f51576f40a4e9e31bf39d17b8c599154429b8d7d55b297cc5, IP: 10.247.6.87) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.247.6.87`
+[33m(raylet)[0m 
+[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+*** SIGTERM received at time=1774095045 on cpu 137 ***
+PC: @     0x7f8d0ebeb117  (unknown)  (unknown)
+    @     0x7f8d0eb9c520  (unknown)  (unknown)
+[2026-03-21 12:10:45,063 E 1689188 1689188] logging.cc:474: *** SIGTERM received at time=1774095045 on cpu 137 ***
+[2026-03-21 12:10:45,064 E 1689188 1689188] logging.cc:474: PC: @     0x7f8d0ebeb117  (unknown)  (unknown)
+[2026-03-21 12:10:45,064 E 1689188 1689188] logging.cc:474:     @     0x7f8d0eb9c520  (unknown)  (unknown)
