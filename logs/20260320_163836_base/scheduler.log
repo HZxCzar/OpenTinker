@@ -1,0 +1,118 @@
+[2026-03-20 16:38:49,707][__main__][INFO] - ============================================================
+[2026-03-20 16:38:49,707][__main__][INFO] - OpenTinker Job Scheduler
+[2026-03-20 16:38:49,707][__main__][INFO] - ============================================================
+[2026-03-20 16:38:49,707][__main__][INFO] - Initializing Ray...
+2026-03-20 16:39:02,754	INFO worker.py:2004 -- Started a local Ray instance. View the dashboard at [1m[32mhttp://127.0.0.1:8265 [39m[22m
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/site-packages/ray/_private/worker.py:2052: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+[2026-03-20 16:39:05,562][__main__][INFO] - Ray initialized successfully
+[2026-03-20 16:39:05,562][__main__][INFO] - Port range not specified, will auto-detect 50 available ports
+[2026-03-20 16:39:05,562][__main__][INFO] - Available GPUs: [0, 1, 2, 3, 4, 5, 6, 7]
+[2026-03-20 16:39:05,562][__main__][INFO] - GPUs per job: 4
+[2026-03-20 16:39:05,562][__main__][INFO] - Scheduler port: 8780
+[2026-03-20 16:39:05,562][__main__][INFO] - Authentication: disabled
+[2026-03-20 16:39:05,562][__main__][INFO] - User database: scheduler_users.db
+[2026-03-20 16:39:05,563][__main__][INFO] - Server script: /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/server/launch_http_server.py
+[2026-03-20 16:39:05,563][__main__][INFO] - Base directory: /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker
+[2026-03-20 16:39:05,563][__main__][INFO] - Initializing user management...
+[2026-03-20 16:39:05,583][user_management][INFO] - Database initialized
+[2026-03-20 16:39:05,583][user_management][INFO] - UserManager initialized with database: scheduler_users.db
+[2026-03-20 16:39:05,583][user_management][INFO] - Admin user 'admin' already exists
+[2026-03-20 16:39:05,583][__main__][INFO] - Job logs directory: ./scheduler_logs
+[2026-03-20 16:39:05,583][__main__][INFO] - Creating scheduler actor...
+[2026-03-20 16:39:06,294][__main__][INFO] - Scheduler actor created
+[2026-03-20 16:39:06,303][__main__][INFO] - ============================================================
+[2026-03-20 16:39:06,303][__main__][INFO] - Starting scheduler server on port 8780
+[2026-03-20 16:39:06,303][__main__][INFO] - Access API docs at: http://localhost:8780/docs
+[2026-03-20 16:39:06,303][__main__][INFO] - Authentication is DISABLED. No API key required
+[2026-03-20 16:39:06,303][__main__][INFO] - ============================================================
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:06,655 - job_scheduler - INFO - Job logs will be stored in: scheduler_logs
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:06,655 - job_scheduler - INFO - ============================================================
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:06,655 - job_scheduler - INFO - 🔍 Detecting GPU topology...
+INFO:     Started server process [2111878]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8780 (Press CTRL+C to quit)
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,319 - job_scheduler - INFO - Detected 1 GPUs from topology: [0]
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,319 - job_scheduler - INFO - Detected 2 GPU topology groups:
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,319 - job_scheduler - INFO -   Group 0: GPUs [1, 2, 3] (NUMA node 0)
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,319 - job_scheduler - INFO -   Group 1: GPUs [4, 5, 6, 7] (NUMA node 1)
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,319 - job_scheduler - INFO - ✅ GPU Topology Detection: SUCCESS
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,320 - job_scheduler - INFO -    Using topology-aware GPU allocation with 2 NUMA groups:
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,320 - job_scheduler - INFO -    - Group 0: GPUs [1, 2, 3]
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,320 - job_scheduler - INFO -    - Group 1: GPUs [4, 5, 6, 7]
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,320 - job_scheduler - INFO -    Multi-GPU jobs will prefer GPUs from the same group for better performance
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,320 - job_scheduler - INFO - ============================================================
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,320 - job_scheduler - INFO - Auto-detecting 50 available ports...
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,320 - job_scheduler - INFO - Auto-detected 50 available ports
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,320 - job_scheduler - INFO - JobSchedulerActor initialized with GPUs: [0, 1, 2, 3, 4, 5, 6, 7]
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,320 - job_scheduler - INFO - GPUs per job: 4
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:07,320 - job_scheduler - INFO - Available ports: [38000, 38001, 38002, 38003, 38004]...[38046, 38047, 38048, 38049, 38050]
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:56,126 - job_scheduler - INFO - Job 9198c5e0 submitted (requesting 8 GPUs)
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:56,126 - job_scheduler - INFO - Job 9198c5e0: Attempting to allocate 8 GPUs
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:56,126 - job_scheduler - INFO -   Current state: 8 available, 0 allocated
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:57,108 - job_scheduler - WARNING - ⚠️ Allocated GPUs across topology groups: [0, 1, 2, 3, 4, 5, 6, 7]
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:57,108 - job_scheduler - INFO - Job 9198c5e0: Allocated GPUs [0, 1, 2, 3, 4, 5, 6, 7], trying port 38000 (attempt 1/3)
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:57,109 - job_scheduler - INFO - Job 9198c5e0: Config keys: ['project_name', 'experiment_name', 'logger_backends', 'enable_tracing', 'weave_project', 'wandb_key', 'tokenizer_path', 'batch_size', 'num_workers', 'num_epochs', 'num_steps', 'save_freq', 'test_freq', 'val_batch_size', 'temperature', 'top_p', 'max_new_tokens', 'max_prompt_tokens', 'algorithm', 'adv_estimator', 'rollout_n', 'interaction', 'multi_turn', 'scheduler_url', 'scheduler_api_key', 'num_gpus', 'enable_agent_loop']
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:57,109 - job_scheduler - INFO - Job 9198c5e0: ✓ Forwarding adv_estimator=grpo
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:57,109 - job_scheduler - INFO - Job 9198c5e0: ✓ Forwarding rollout.n=8 (grpo mode)
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:57,109 - job_scheduler - INFO - Job 9198c5e0: Launching server with command: python /inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/server/launch_http_server.py server.port=38000 job_id=9198c5e0 enable_agent_loop=True algorithm.adv_estimator=grpo actor_rollout_ref.rollout.n=8
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:57,109 - job_scheduler - INFO - Job 9198c5e0: Logging stdout to scheduler_logs/2026-03-20_16-39-57_job_9198c5e0_stdout.log
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:57,109 - job_scheduler - INFO - Job 9198c5e0: Logging stderr to scheduler_logs/2026-03-20_16-39-57_job_9198c5e0_stderr.log
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:57,615 - job_scheduler - INFO - Job 9198c5e0: Server process started (PID 2142239)
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:39:57,615 - job_scheduler - INFO - Job 9198c5e0: Waiting for server to be ready at http://127.0.0.1:38000/api/v1/health
+INFO:     127.0.0.1:56892 - "POST /submit_job HTTP/1.1" 200 OK
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:40:05,633 - job_scheduler - INFO - Job 9198c5e0: ✅ Server ready after 8.0s
+[36m(JobSchedulerActor pid=2114381)[0m 2026-03-20 16:40:05,633 - job_scheduler - INFO - Job 9198c5e0: ✅ Server started and ready (PID 2142239)
+[33m(raylet)[0m [2026-03-20 18:14:09,873 E 2114112 2114112] (raylet) node_manager.cc:3250: 2 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: deddccdc28117fbc9c43414e36cdfd6d7ae618700f6edd03c19fa532, IP: 10.247.14.78) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.247.14.78`
+[33m(raylet)[0m 
+[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[33m(raylet)[0m 
+[33m(raylet)[0m [2026-03-20 18:15:34,445 E 2114112 2114112] (raylet) node_manager.cc:3250: 3 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: deddccdc28117fbc9c43414e36cdfd6d7ae618700f6edd03c19fa532, IP: 10.247.14.78) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.247.14.78`
+[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[33m(raylet)[0m [2026-03-20 18:16:59,825 E 2114112 2114112] (raylet) node_manager.cc:3250: 3 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: deddccdc28117fbc9c43414e36cdfd6d7ae618700f6edd03c19fa532, IP: 10.247.14.78) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.247.14.78`
+[33m(raylet)[0m 
+[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[33m(raylet)[0m 
+[33m(raylet)[0m [2026-03-20 18:18:25,033 E 2114112 2114112] (raylet) node_manager.cc:3250: 3 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: deddccdc28117fbc9c43414e36cdfd6d7ae618700f6edd03c19fa532, IP: 10.247.14.78) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.247.14.78`
+[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[33m(raylet)[0m [2026-03-20 18:19:49,903 E 2114112 2114112] (raylet) node_manager.cc:3250: 3 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: deddccdc28117fbc9c43414e36cdfd6d7ae618700f6edd03c19fa532, IP: 10.247.14.78) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.247.14.78`
+[33m(raylet)[0m 
+[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[33m(raylet)[0m 
+[33m(raylet)[0m [2026-03-20 18:21:16,389 E 2114112 2114112] (raylet) node_manager.cc:3250: 3 Workers (tasks / actors) killed due to memory pressure (OOM), 0 Workers crashed due to other reasons at node (ID: deddccdc28117fbc9c43414e36cdfd6d7ae618700f6edd03c19fa532, IP: 10.247.14.78) over the last time period. To see more information about the Workers killed on this node, use `ray logs raylet.out -ip 10.247.14.78`
+[33m(raylet)[0m Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+[2026-03-20 18:22:00,395][job_scheduler][ERROR] - Error cancelling job: Task was killed due to the node running low on memory.
+Memory on the node (IP: 10.247.14.78, ID: deddccdc28117fbc9c43414e36cdfd6d7ae618700f6edd03c19fa532) where the lease (lease ID: 000000000835abeebd2d8decaa1a829db28812d2fbe2bb0d2454dc78f89b5e5d, name=JobSchedulerActor.__init__, pid=2114381, memory used=0.08GB) was running was 1710.14GB / 1800.00GB (0.950076), which exceeds the memory usage threshold of 0.95. Ray killed this worker (ID: daa46f77d22cfd88473537474042cff9e6697f9fd708769442fe9492) because it was the most recently scheduled task; to see more information about memory usage on this node, use `ray logs raylet.out -ip 10.247.14.78`. To see the logs of the worker, use `ray logs worker-daa46f77d22cfd88473537474042cff9e6697f9fd708769442fe9492*out -ip 10.247.14.78. Top 10 memory users:
+PID	MEM(GB)	COMMAND
+2160879	15.64	ray::WorkerDict
+2160884	14.63	ray::WorkerDict
+2160891	14.55	ray::WorkerDict
+2160890	14.52	ray::WorkerDict
+2160874	14.39	ray::WorkerDict
+2160877	14.36	ray::WorkerDict
+2160882	14.34	ray::WorkerDict
+2160888	14.26	ray::WorkerDict
+2322247	2.22	java -classpath /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/...
+2143287	1.35	/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/s...
+Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. Set max_restarts and max_task_retries to enable retry when the task crashes due to OOM. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+INFO:     127.0.0.1:43374 - "DELETE /cancel_job/9198c5e0 HTTP/1.1" 500 Internal Server Error
+[2026-03-20 18:22:00,408][job_scheduler][ERROR] - Error completing job: Task was killed due to the node running low on memory.
+Memory on the node (IP: 10.247.14.78, ID: deddccdc28117fbc9c43414e36cdfd6d7ae618700f6edd03c19fa532) where the lease (lease ID: 000000000835abeebd2d8decaa1a829db28812d2fbe2bb0d2454dc78f89b5e5d, name=JobSchedulerActor.__init__, pid=2114381, memory used=0.08GB) was running was 1710.14GB / 1800.00GB (0.950076), which exceeds the memory usage threshold of 0.95. Ray killed this worker (ID: daa46f77d22cfd88473537474042cff9e6697f9fd708769442fe9492) because it was the most recently scheduled task; to see more information about memory usage on this node, use `ray logs raylet.out -ip 10.247.14.78`. To see the logs of the worker, use `ray logs worker-daa46f77d22cfd88473537474042cff9e6697f9fd708769442fe9492*out -ip 10.247.14.78. Top 10 memory users:
+PID	MEM(GB)	COMMAND
+2160879	15.64	ray::WorkerDict
+2160884	14.63	ray::WorkerDict
+2160891	14.55	ray::WorkerDict
+2160890	14.52	ray::WorkerDict
+2160874	14.39	ray::WorkerDict
+2160877	14.36	ray::WorkerDict
+2160882	14.34	ray::WorkerDict
+2160888	14.26	ray::WorkerDict
+2322247	2.22	java -classpath /inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/...
+2143287	1.35	/inspire/hdd/project/qproject-fundationmodel/public/wxxu/miniconda3/envs/opentinker/lib/python3.11/s...
+Refer to the documentation on how to address the out of memory issue: https://docs.ray.io/en/latest/ray-core/scheduling/ray-oom-prevention.html. Consider provisioning more memory on this node or reducing task parallelism by requesting more CPUs per task. Set max_restarts and max_task_retries to enable retry when the task crashes due to OOM. To adjust the kill threshold, set the environment variable `RAY_memory_usage_threshold` when starting Ray. To disable worker killing, set the environment variable `RAY_memory_monitor_refresh_ms` to zero.
+INFO:     127.0.0.1:43374 - "POST /complete_job/9198c5e0 HTTP/1.1" 500 Internal Server Error
+INFO:     Shutting down
+[2026-03-20 18:22:04,259][__main__][INFO] - 
+============================================================
+[2026-03-20 18:22:04,644][__main__][INFO] - ⚠️ Received SIGTERM. Initiating graceful shutdown
