@@ -34,7 +34,7 @@ export WANDB_DISABLED="${WANDB_DISABLED:-false}"
 MODEL_REPO_CACHE_DIR="${HF_HOME}/hub/models--Qwen--Qwen3-8B/snapshots"
 SCHEDULER_PORT="${SCHEDULER_PORT:-8780}"
 TRAIN_ENV_PORT="${TRAIN_ENV_PORT:-8092}"
-TRAIN_ENV_SHARDS="${TRAIN_ENV_SHARDS:-8}"
+TRAIN_ENV_SHARDS="${TRAIN_ENV_SHARDS:-4}"
 DEV_ENV_PORT="${DEV_ENV_PORT:-8093}"
 TEST_ENV_PORT="${TEST_ENV_PORT:-8094}"
 ENV_HOST="${ENV_HOST:-127.0.0.1}"
@@ -214,6 +214,8 @@ run_base() {
     scheduler_url="http://${ENV_HOST}:${SCHEDULER_PORT}" \
     interaction.config.env_host="${ENV_HOST}" \
     interaction.config.env_port="${TRAIN_ENV_PORT}" \
+    interaction.config.env_shards="${TRAIN_ENV_SHARDS}" \
+    agent_num_workers="${TRAIN_ENV_SHARDS}" \
     logger_backends='["console"]' \
     enable_tracing=false \
     2>&1 | tee "${LOG_ROOT}/train_base.log"
@@ -228,6 +230,8 @@ run_wmc_erc() {
     scheduler_url="http://${ENV_HOST}:${SCHEDULER_PORT}" \
     interaction.config.env_host="${ENV_HOST}" \
     interaction.config.env_port="${TRAIN_ENV_PORT}" \
+    interaction.config.env_shards="${TRAIN_ENV_SHARDS}" \
+    agent_num_workers="${TRAIN_ENV_SHARDS}" \
     logger_backends='["console"]' \
     enable_tracing=false \
     2>&1 | tee "${LOG_ROOT}/train_wmc_erc.log"

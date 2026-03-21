@@ -48,6 +48,7 @@ adv_estimator: "grpo"
 # rollout_n: number of samples per prompt for GRPO/grpo_per_step
 # For PPO (gae), rollout_n is typically 1
 rollout_n: 8
+agent_num_workers: 4 # Keep aligned with env_shards to limit Ray agent-loop concurrency
 
 interaction:
   name: sciworld
@@ -56,7 +57,7 @@ interaction:
     env_host: 0.0.0.0
     env_port: 8092
     env_endpoint: http://${interaction.config.env_host}:${interaction.config.env_port}
-    env_shards: 8
+    env_shards: 4
     max_steps: 30
     max_total_steps: 30
     observation_template: "{observation}"
