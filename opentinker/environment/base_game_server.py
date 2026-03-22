@@ -31,6 +31,7 @@ Example:
     run_game_server(MyGame, port=8081, board_size=9)
 """
 
+import logging
 import threading
 from collections import defaultdict
 from typing import Any, Dict, List, Optional, Type
@@ -40,6 +41,8 @@ from pydantic import BaseModel
 import uvicorn
 
 from opentinker.environment.base_game import AbstractGame
+
+logger = logging.getLogger(__name__)
 
 
 class BaseGameStats:
@@ -376,6 +379,27 @@ def create_game_app(
     # Use MultiJobGameStats for job isolation
     multi_stats = MultiJobGameStats(stats_class=stats_class or BaseGameStats)
 
+    def _remove_game(instance_id: str) -> Optional[AbstractGame]:
+        with games_lock:
+            return games.pop(instance_id, None)
+
+    def _close_game(instance_id: str) -> bool:
+        game = _remove_game(instance_id)
+        if game is None:
+            return False
+
+        close_fn = getattr(game, "close", None)
+        if callable(close_fn):
+            try:
+                close_fn()
+            except Exception as exc:
+                logger.warning(
+                    "Failed to close game instance %s during cleanup: %s",
+                    instance_id,
+                    exc,
+                )
+        return True
+
     @app.get("/health")
     async def health_check():
         return {"status": "healthy"}
@@ -424,10 +448,8 @@ def create_game_app(
     async def finalize(request: ResetRequest):
         """Finalize a game instance and clean up resources."""
         instance_id = request.instance_id
-        with games_lock:
-            if instance_id in games:
-                del games[instance_id]
-                return {"message": f"Instance {instance_id} removed"}
+        if _close_game(instance_id):
+            return {"message": f"Instance {instance_id} removed"}
         return {"message": f"Instance {instance_id} not found", "status": "ignored"}
 
     @app.post("/step")
@@ -454,9 +476,7 @@ def create_game_app(
 
         # Clean up finished games
         if result.done:
-            with games_lock:
-                if instance_id in games:
-                    del games[instance_id]
+            _close_game(instance_id)
 
         return {
             "observation": result.observation,

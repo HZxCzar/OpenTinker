@@ -334,15 +334,46 @@ class GymEnvironmentInteraction(BaseInteraction):
     async def finalize_interaction(self, instance_id: str, **kwargs) -> None:
         """Clean up resources for this trajectory.
 
-        Removes the instance data and closes any local environment.
+        Removes the instance data, finalizes any remote environment instance,
+        and closes any local environment.
         """
-        if instance_id in self._instance_dict:
-            del self._instance_dict[instance_id]
+        if self.env_endpoint is not None and instance_id not in self._local_envs:
+            endpoint = self._get_endpoint(instance_id)
+            try:
+                async with aiohttp.ClientSession() as session:
+                    async with session.post(
+                        f"{endpoint}/finalize",
+                        json={"instance_id": instance_id, "job_id": self.job_id},
+                        timeout=aiohttp.ClientTimeout(total=60),
+                    ) as response:
+                        if response.status != 200:
+                            logger.warning(
+                                "[GymEnvironmentInteraction] Remote finalize returned %s for instance %s: %s",
+                                response.status,
+                                instance_id,
+                                await response.text(),
+                            )
+            except Exception as exc:
+                logger.warning(
+                    "[GymEnvironmentInteraction] Failed to finalize remote instance %s at %s: %s",
+                    instance_id,
+                    endpoint,
+                    exc,
+                )
+
+        self._instance_dict.pop(instance_id, None)
 
         if instance_id in self._local_envs:
             env = self._local_envs.pop(instance_id)
             if hasattr(env, "close"):
-                env.close()
+                try:
+                    env.close()
+                except Exception as exc:
+                    logger.warning(
+                        "[GymEnvironmentInteraction] Failed to close local env for instance %s: %s",
+                        instance_id,
+                        exc,
+                    )
 
     def _extract_action(self, messages: list[dict[str, Any]]) -> str:
         """Extract the action from the last assistant message.
