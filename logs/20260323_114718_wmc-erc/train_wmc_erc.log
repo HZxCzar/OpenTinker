@@ -1,0 +1,13 @@
+INFO 03-23 11:48:35 [__init__.py:216] Automatically detected platform cuda.
+/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/opentinker/client/sciworld_rl.py:15: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  @hydra.main(config_path="client_config", config_name="sciworld_param.yaml")
+Could not override 'agent_num_workers'.
+To append to your config use +agent_num_workers=8
+Key 'agent_num_workers' is not in struct
+    full_key: agent_num_workers
+    object_type=dict
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
