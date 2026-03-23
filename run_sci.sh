@@ -216,7 +216,6 @@ run_base() {
     interaction.config.env_port="${TRAIN_ENV_PORT}" \
     interaction.config.env_shards="${TRAIN_ENV_SHARDS}" \
     agent_num_workers="${TRAIN_ENV_SHARDS}" \
-    logger_backends='["console"]' \
     enable_tracing=false \
     2>&1 | tee "${LOG_ROOT}/train_base.log"
 }
@@ -232,7 +231,6 @@ run_wmc_erc() {
     interaction.config.env_port="${TRAIN_ENV_PORT}" \
     interaction.config.env_shards="${TRAIN_ENV_SHARDS}" \
     agent_num_workers="${TRAIN_ENV_SHARDS}" \
-    logger_backends='["console"]' \
     enable_tracing=false \
     2>&1 | tee "${LOG_ROOT}/train_wmc_erc.log"
 }

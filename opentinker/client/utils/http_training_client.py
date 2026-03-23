@@ -14,6 +14,7 @@
 # limitations under the License.
 
 import logging
+import re
 import time
 from typing import Any, Dict, Iterator, List, Optional
 
@@ -32,6 +33,45 @@ logger = logging.getLogger(__name__)
 
 # Suppress repetitive asyncio warnings about socket errors
 logging.getLogger("asyncio").setLevel(logging.ERROR)
+
+_CHECKPOINT_PATH_COMPONENT_RE = re.compile(r"[^A-Za-z0-9._-]+")
+
+
+def _sanitize_checkpoint_path_component(value: Any, fallback: str) -> str:
+    text = "" if value is None else str(value).strip()
+    if not text:
+        return fallback
+
+    sanitized = _CHECKPOINT_PATH_COMPONENT_RE.sub("_", text).strip("._")
+    return sanitized or fallback
+
+
+def build_http_checkpoint_dir(
+    project_name: Any, experiment_name: Any, job_id: Any
+) -> str:
+    project_component = _sanitize_checkpoint_path_component(
+        project_name, "default_project"
+    )
+    experiment_component = _sanitize_checkpoint_path_component(
+        experiment_name, "default_experiment"
+    )
+    job_component = _sanitize_checkpoint_path_component(job_id, "default")
+    return f"./ckpt/{project_component}/{experiment_component}/job_{job_component}"
+
+
+def resolve_http_checkpoint_dir(args: Any, env: Any) -> str:
+    explicit_ckpt_dir = getattr(args, "ckpt_dir", None) or getattr(
+        args, "checkpoint_dir", None
+    )
+    if explicit_ckpt_dir:
+        return str(explicit_ckpt_dir)
+
+    job_id = getattr(env, "job_id", None) or getattr(args, "job_id", None)
+    return build_http_checkpoint_dir(
+        project_name=getattr(args, "project_name", None),
+        experiment_name=getattr(args, "experiment_name", None),
+        job_id=job_id,
+    )
 
 
 class HTTPTrainingClient:
@@ -598,10 +638,20 @@ class ServiceClient:
 
     def set_config(self, args: DictConfig, env=None):
         # 7.5 define general config
+        checkpoint_dir = resolve_http_checkpoint_dir(args, env)
+        logger.info(f"Using checkpoint directory override: {checkpoint_dir}")
+        """
 
         # 同一个key出现两次，后者会将前者覆盖
         trainer_cfg = {
             "n_gpus_per_node": args.num_gpus,
+            "default_local_dir": checkpoint_dir,
+        }
+        """
+        # Duplicate keys are overwritten by the later config merge.
+        trainer_cfg = {
+            "n_gpus_per_node": args.num_gpus,
+            "default_local_dir": checkpoint_dir,
         }
         if getattr(args, "project_name", None) is not None:
             trainer_cfg["project_name"] = args.project_name
