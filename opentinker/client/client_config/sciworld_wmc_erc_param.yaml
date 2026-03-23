@@ -41,6 +41,7 @@ algorithm: "agent_loop"
 # RL Algorithm settings
 adv_estimator: "grpo"
 rollout_n: 8
+agent_num_workers: 8 # Keep aligned with env_shards to limit Ray agent-loop concurrency
 
 # WMC-ERC: Dynamic Entropy Clipping
 wmc_erc:
