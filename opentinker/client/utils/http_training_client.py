@@ -640,19 +640,12 @@ class ServiceClient:
         # 7.5 define general config
         checkpoint_dir = resolve_http_checkpoint_dir(args, env)
         logger.info(f"Using checkpoint directory override: {checkpoint_dir}")
-        """
 
-        # 同一个key出现两次，后者会将前者覆盖
         trainer_cfg = {
             "n_gpus_per_node": args.num_gpus,
             "default_local_dir": checkpoint_dir,
         }
-        """
-        # Duplicate keys are overwritten by the later config merge.
-        trainer_cfg = {
-            "n_gpus_per_node": args.num_gpus,
-            "default_local_dir": checkpoint_dir,
-        }
+        
         if getattr(args, "project_name", None) is not None:
             trainer_cfg["project_name"] = args.project_name
         if getattr(args, "experiment_name", None) is not None:
