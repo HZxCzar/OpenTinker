@@ -42,7 +42,16 @@ RUN_DIR="${OUTPUT_ROOT}/${RUN_NAME}"
 SERVER_LOG="${RUN_DIR}/sciworld_server.log"
 SERVER_PID_FILE="${RUN_DIR}/sciworld_server.pid"
 TRAIN_LOG="${RUN_DIR}/train.log"
-TRAIN_FILE="${DATA_ROOT}/AgentItemId/sciworld_train.json"
+TRAIN_FILE_OLD="${DATA_ROOT}/AgentItemId/sciworld_train.json"
+TRAIN_FILE_NEW="${DATA_ROOT}/train/sciworld_train.json"
+
+if [[ -f "${TRAIN_FILE_OLD}" ]]; then
+  TRAIN_FILE="${TRAIN_FILE_OLD}"
+elif [[ -f "${TRAIN_FILE_NEW}" ]]; then
+  TRAIN_FILE="${TRAIN_FILE_NEW}"
+else
+  TRAIN_FILE="${TRAIN_FILE_OLD}"
+fi
 
 if [[ -z "${MODEL_PATH}" ]]; then
   echo "MODEL_PATH is required."
@@ -63,6 +72,9 @@ fi
 
 if [[ ! -f "${TRAIN_FILE}" ]]; then
   echo "Training file does not exist: ${TRAIN_FILE}"
+  echo "Checked:"
+  echo "  ${TRAIN_FILE_OLD}"
+  echo "  ${TRAIN_FILE_NEW}"
   echo "Run scripts/download_agentgym_rl_data.sh first, or set DATA_ROOT correctly."
   exit 1
 fi

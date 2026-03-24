@@ -35,8 +35,8 @@ token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGINGFACE_TOKEN")
 allow_patterns = None
 if task_name.lower() != "all":
     allow_patterns = [
-        f"AgentItemId/{task_name}_train.json",
-        f"AgentEval/{task_name}/**",
+        f"train/{task_name}_train.json",
+        f"eval/{task_name}_test.json",
     ]
 
 snapshot_download(
@@ -52,6 +52,23 @@ print("\nDownload completed.")
 if allow_patterns is None:
     print(f"Full dataset saved under: {dest_dir}")
 else:
-    print(f"Expected train file: {os.path.join(dest_dir, 'AgentItemId', f'{task_name}_train.json')}")
-    print(f"Expected eval dir: {os.path.join(dest_dir, 'AgentEval', task_name)}")
+    train_src = os.path.join(dest_dir, "train", f"{task_name}_train.json")
+    eval_src = os.path.join(dest_dir, "eval", f"{task_name}_test.json")
+
+    compat_train_dir = os.path.join(dest_dir, "AgentItemId")
+    compat_eval_dir = os.path.join(dest_dir, "AgentEval", task_name)
+    os.makedirs(compat_train_dir, exist_ok=True)
+    os.makedirs(compat_eval_dir, exist_ok=True)
+
+    if os.path.exists(train_src):
+        import shutil
+        shutil.copy2(train_src, os.path.join(compat_train_dir, f"{task_name}_train.json"))
+    if os.path.exists(eval_src):
+        import shutil
+        shutil.copy2(eval_src, os.path.join(compat_eval_dir, f"{task_name}_test.json"))
+
+    print(f"Downloaded train file: {train_src}")
+    print(f"Downloaded eval file: {eval_src}")
+    print(f"Compatibility train file: {os.path.join(dest_dir, 'AgentItemId', f'{task_name}_train.json')}")
+    print(f"Compatibility eval dir: {os.path.join(dest_dir, 'AgentEval', task_name)}")
 PY
