@@ -15,7 +15,7 @@ echo "Downloading dataset repo: ${REPO_ID}"
 echo "Target directory: ${DEST_DIR}"
 echo "Task selection: ${TASK_NAME}"
 
-"${PYTHON_BIN}" - <<'PY'
+REPO_ID="${REPO_ID}" DEST_DIR="${DEST_DIR}" TASK_NAME="${TASK_NAME}" "${PYTHON_BIN}" - <<'PY'
 import os
 import sys
 
