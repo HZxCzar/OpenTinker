@@ -2,15 +2,15 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+ROOT=/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker
 
-MODEL_PATH="${MODEL_PATH:-}"
-DATA_ROOT="${DATA_ROOT:-${ROOT}/data}"
+MODEL_PATH=/inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28
+DATA_ROOT=/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/data
 OUTPUT_ROOT="${OUTPUT_ROOT:-${ROOT}/outputs}"
 RUN_NAME="${RUN_NAME:-sciworld_$(date +%Y%m%d_%H%M%S)}"
 SERVER_URL="${SERVER_URL:-http://127.0.0.1:36005}"
 
-NUM_GPUS="${NUM_GPUS:-1}"
+NUM_GPUS="${NUM_GPUS:-8}"
 TRAIN_BATCH_SIZE="${TRAIN_BATCH_SIZE:-16}"
 ROLLOUT_SAMPLE_NUM="${ROLLOUT_SAMPLE_NUM:-8}"
 TOTAL_EPOCHS="${TOTAL_EPOCHS:-10}"
