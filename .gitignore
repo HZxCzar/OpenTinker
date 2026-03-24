@@ -137,4 +137,3 @@ outputs
 !logs/**
 !scheduler_logs/
 !scheduler_logs/**
-/ckpt_322
