@@ -4,7 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT=/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker
 
-MODEL_PATH=/inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28
+MODEL_PATH=/inspire/hdd/project/qproject-fundationmodel/public/wxxu/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218
 DATA_ROOT=/inspire/hdd/project/qproject-fundationmodel/public/wxxu/OpenTinker/data
 OUTPUT_ROOT="${OUTPUT_ROOT:-${ROOT}/outputs}"
 RUN_NAME="${RUN_NAME:-sciworld_$(date +%Y%m%d_%H%M%S)}"
@@ -25,7 +25,7 @@ POLICY_LR="${POLICY_LR:-1e-6}"
 PPO_MINI_BATCH_SIZE="${PPO_MINI_BATCH_SIZE:-8}"
 PPO_MICRO_BATCH_SIZE_PER_GPU="${PPO_MICRO_BATCH_SIZE_PER_GPU:-1}"
 PPO_INNER_EPOCHS="${PPO_INNER_EPOCHS:-1}"
-SAVE_FREQ="${SAVE_FREQ:-25}"
+SAVE_FREQ="${SAVE_FREQ:-100}"
 
 WANDB_MODE="${WANDB_MODE:-offline}"
 WANDB_PROJECT="${WANDB_PROJECT:-co-evolve}"
@@ -128,3 +128,5 @@ python -m verl.agent_trainer.main_ppo \
   trainer.experiment_name="${RUN_NAME}" \
   trainer.save_freq="${SAVE_FREQ}" \
   trainer.total_epochs="${TOTAL_EPOCHS}" | tee "${LOG_FILE}"
+
+python /inspire/hdd/project/qproject-fundationmodel/public/wxxu/test.py
